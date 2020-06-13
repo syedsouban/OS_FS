@@ -11,20 +11,6 @@ void printf(char *);
 
 InterruptManager::GateDescriptor InterruptManager::interruptDescriptorTable[256];
 
-uint32_t InterruptManager::handleInterrupt(uint8_t interruptNumber,
-		uint32_t esp) {
-	printf("INTERRUPT");
-	return esp;
-}
-
-//InterruptManager::~InterruptManager() {
-//	// TODO Auto-generated destructor stub
-//}
-
-//void InterruptManager::HandleInterruptRequest0x00() {
-//	printf("Int");
-//}
-
 void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t interruptNumber,
 		uint16_t csSelectorOffset, void (*handler)(),
 		uint8_t DescriptorPriviligeLevel, uint8_t DescriptorType) {
@@ -36,7 +22,9 @@ void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t interruptNumber,
 	interruptDescriptorTable[interruptNumber].gdt_cs_selector = csSelectorOffset;
 	interruptDescriptorTable[interruptNumber].access = IDT_DESC_PRESENT | DescriptorType | ((DescriptorPriviligeLevel&3)<<5);
 	interruptDescriptorTable[interruptNumber].reserved = 0;
-
+	// if(interruptNumber<=9)
+	// {char s[] = {((uint8_t)interruptNumber + '0')};
+	// printf(s);}
 }
 
 InterruptManager::InterruptManager(GlobalDescriptorTable *gdt)
@@ -48,11 +36,11 @@ InterruptManager::InterruptManager(GlobalDescriptorTable *gdt)
 
 	uint8_t CodeSegment = gdt->GetCodeSegmentOffset();
 	const uint8_t IDT_INTERRUPT_GATE = 0xE;
-	for (uint8_t i = 0;  i < 256; ++ i) {
+	for (uint16_t i = 1;  i < 256; ++ i) {
 		SetInterruptDescriptorTableEntry(i,CodeSegment,&IgnoreInterruptRequest,0,IDT_INTERRUPT_GATE);
 	}
-	SetInterruptDescriptorTableEntry(0x20,CodeSegment,&HandleInterruptRequest0x00,0,IDT_INTERRUPT_GATE);
-	SetInterruptDescriptorTableEntry(0x21,CodeSegment,&HandleInterruptRequest0x01,0,IDT_INTERRUPT_GATE);
+	// SetInterruptDescriptorTableEntry(0x20,CodeSegment,&HandleInterruptRequest0x20,0,IDT_INTERRUPT_GATE);
+	// SetInterruptDescriptorTableEntry(0x21,CodeSegment,&HandleInterruptRequest0x21,0,IDT_INTERRUPT_GATE);
 
 
 	picMasterCommandPort.Write(0x11);
@@ -77,11 +65,38 @@ InterruptManager::InterruptManager(GlobalDescriptorTable *gdt)
 	__asm__ volatile("lidt %0" : : "m" (idt));
 }
 
-void InterruptManager::Activate() {
+//InterruptManager::~InterruptManager() {
+//	// TODO Auto-generated destructor stub
+//}
 
-	__asm__("sti");
 
+void InterruptManager::Activate()
+{
+  printf("unlocking");
+asm("cli");
+  
 }
+
+uint32_t InterruptManager::handleInterrupt(uint32_t esp) {
+	printf("INTERRUPT");
+	return esp;
+}
+
+//void InterruptManager::IgnoreInterruptRequest() {
+//	printf("Ignored INTERRUPT");
+//}
+
+//void InterruptManager::HandleInterruptRequest0x99() {
+//}
+//void InterruptManager::HandleInterruptRequest0x00() {
+//	printf("Int");
+//}
+
+
+
+
+
+
 //
 //void InterruptManager::HandleInterruptRequest0x01() {
 //	printf("Int");

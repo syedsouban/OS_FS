@@ -2,7 +2,7 @@
 #define __GDT_H
 
 #include "types.h"
-
+void doNothing();
 class GlobalDescriptorTable
 {
 private:

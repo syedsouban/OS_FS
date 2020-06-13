@@ -12,8 +12,6 @@
 #include "gdt.h"
 #include "port.h"
 
-
-
 class InterruptManager {
 
 
@@ -43,13 +41,14 @@ protected:
 	_8BitPortSlow picSlaveDataPort;
 
 public:
-	static uint32_t handleInterrupt(uint8_t interruptNumber, uint32_t esp);
+	static uint32_t handleInterrupt(uint32_t esp);
 	InterruptManager(GlobalDescriptorTable* gdt);
-//	~InterruptManager();
+	~InterruptManager();
 	void Activate();
 	static void IgnoreInterruptRequest();
-	static void HandleInterruptRequest0x00();
-	static void HandleInterruptRequest0x01();
+	// static void HandleInterruptRequest0x20();
+	// static void HandleInterruptRequest0x21();
+//	static void HandleInterruptRequest0x99();
 
 //	static void HandleInterruptException();
 };

@@ -1,8 +1,8 @@
-GCCPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
+GCCPARAMS = -g -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -v -da -Q
 ASPARAMS = --32
-LDPARAMS = -melf_i386
+LDPARAMS = -g -melf_i386
 
-objects = loader.o gdt.o port.o interruptstubs.o interrupts.o kernel.o
+objects = loader.o printf.o gdt.o port.o interruptstubs.o interrupts.o kernel.o
 
 
 run: mykernel.iso

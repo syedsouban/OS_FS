@@ -21,7 +21,6 @@ loader:
     push %ebx
     call kernelMain
 
-
 _stop:
     cli
     hlt

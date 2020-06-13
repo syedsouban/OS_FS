@@ -1,18 +1,18 @@
 .set IRQ_BASE, 0x20
 
-.section text
+.section .text
 
-.extern _ZN16InterruptManager15handleInterruptEhj
+.extern _ZN16InterruptManager15handleInterruptEj
 .global _ZN16InterruptManager22IgnoreInterruptRequestEv
 
-.macro HandleInterruptException num
-.global _ZN16InterruptManager28HandleInterruptException\num\()Ev
-_ZN16InterruptManager28HandleInterruptException\num\()Ev:
-	movb $\num, (interruptnumber)
-	jmp int_bottom
-.endm
+# .macro HandleInterruptException num
+# .global _ZN16InterruptManager28HandleInterruptException\num\()Ev
+# _ZN16InterruptManager28HandleInterruptException\num\()Ev:
+# 	movb $\num, (interruptnumber)
+# 	jmp int_bottom
+# .endm
 
-#macros are used for generating assembly code in preprocessing stage of assembler
+# macros are used for generating assembly code in preprocessing stage of assembler
 # the syntax for assembler is:
 # .macro macro_name param1 param2 ....
 # macro_body
@@ -27,16 +27,30 @@ _ZN16InterruptManager28HandleInterruptException\num\()Ev:
 # So to mark boundary to any parameter we can use \()
 
 
-.macro handleInterruptRequest num
-.global _ZN16InterruptManager26HandleInterruptRequest\num\()Ev
-_ZN16InterruptManager26HandleInterruptRequest\num\()Ev:
-	movb $\num + IRQ_BASE, (interruptnumber)
-	jmp int_bottom
-.endm
+# .macro handleInterruptRequest num
+# .global _ZN16InterruptManager26HandleInterruptRequest\num\()Ev
+# _ZN16InterruptManager26HandleInterruptRequest\num\()Ev:
+#	movb $\num + IRQ_BASE, (interruptnumber)
+#	jmp int_bottom
+# .endm
 
+# _ZN16InterruptManager26HandleInterruptRequest0x20Ev:
+# 	# movb $\num + IRQ_BASE, (interruptnumber)
+# 	jmp int_bottom
 
-handleInterruptRequest 0x00
-handleInterruptRequest 0x01
+# _ZN16InterruptManager26HandleInterruptRequest0x21Ev:
+# 	# movb $\num + IRQ_BASE, (interruptnumber)
+# 	jmp int_bottom
+
+_ZN16InterruptManager22IgnoreInterruptRequestEv:
+	pushl %esp
+	call _ZN16InterruptManager15handleInterruptEj
+	mov %eax, %esp
+	iret
+	# jmp int_bottom
+
+# handleInterruptRequest 0x00
+# handleInterruptRequest 0x01
 
 int_bottom:
 
@@ -46,9 +60,8 @@ int_bottom:
 	pushl %fs
 	pushl %gs
 	push %esp
-	push (interruptnumber)
-	call _ZN16InterruptManager15handleInterruptEhj
-	#addl $5, %esp
+	call _ZN16InterruptManager15handleInterruptEj
+	# #addl $5, %esp
 	movl %eax, %esp
 
 	pop %gs
@@ -56,11 +69,8 @@ int_bottom:
 	pop %es
 	pop %ds
 	popa
+	# iret
 
-	iret
-
-_ZN16InterruptManager22IgnoreInterruptRequestEv:
-	iret
 
 
 .data
