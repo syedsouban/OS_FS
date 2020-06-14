@@ -51,7 +51,7 @@ InterruptManager::InterruptManager(GlobalDescriptorTable *gdt)
 }
 void InterruptManager::Activate()
 {
-	asm("cli");
+	asm("sti");
 }
 
 uint32_t InterruptManager::handleInterrupt(uint32_t esp) {
