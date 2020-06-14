@@ -12,20 +12,11 @@ extern "C" void callConstructors() {
 
 extern "C" void kernelMain(const void *multiboot_structure,
 		uint32_t /*multiboot_magic*/) {
-
-
-	// printf("H");
-		printf("OS Development is a challenging yet fun task!");
-	GlobalDescriptorTable gdt;
 	
-//
-		// printf("%d",(*base).GetBase());
-//
+	// printf("OS Development is a challenging yet fun task!");
+	GlobalDescriptorTable gdt;
 	InterruptManager interruptsManager(&gdt);
-//
-//
 	interruptsManager.Activate();
 
-	while (1)
-		;
+	while (1);
 }

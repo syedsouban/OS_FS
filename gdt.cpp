@@ -12,21 +12,10 @@ unusedSegmentSelector(0,0,0),
 codeSegmentSelector(0,64*1024*1024,0x9A), //here code and data segment are there in same segment
 dataSegmentSelector(0,64*1024*1024,0x92)
 {
-
     uint32_t i[2];
     i[1] = (uint32_t)this;
     i[0] = sizeof(GlobalDescriptorTable) << 16;
     asm volatile("lgdt (%0)": :"p" (((uint8_t *) i)+2));
-
-	// printf("gdt constructor called\n");
-    // volatile static GdtDescriptionStructure gdt_locator;
-	// gdt_locator.addressof_gdt = (uint32_t) this;
-    // gdt_locator.sizeof_gdt = sizeof(GlobalDescriptorTable) - 1;
-	/*asm volatile ("lgdt (%0)": :"m" (gdt_locator)); */
-}
-
-void doNothing() {
-    int a = 2;
 }
 
 GlobalDescriptorTable::~GlobalDescriptorTable()
@@ -48,7 +37,6 @@ uint16_t GlobalDescriptorTable::GetCodeSegmentOffset()
 
 GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t access_byte)
 {
-	// printf("setting up segment descriptor\n");
     uint8_t* target = (uint8_t*)this;
     if(limit<=65536)
     {
