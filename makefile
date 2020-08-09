@@ -2,7 +2,7 @@ GCCPARAMS = -g -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-ex
 ASPARAMS = -g --32 -v
 LDPARAMS = -g -melf_i386
 
-objects = loader.o printf.o gdt.o port.o interruptstubs.o interrupts.o kernel.o
+objects = loader.o printf.o gdt.o port.o interruptstubs.o interrupts.o keyboard.o kernel.o
 
 
 run: mykernel.iso
