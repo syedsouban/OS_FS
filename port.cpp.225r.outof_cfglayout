@@ -1,0 +1,1321 @@
+
+;; Function static uint8_t Port8Bit::Read8(uint16_t) (_ZN8Port8Bit5Read8Et, funcdef_no=0, decl_uid=1098, cgraph_uid=0, symbol_order=0)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 89)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:27 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 89) 0)) port.h:27 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:HI 91)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])) port.h:30 92 {*movhi_internal}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:QI 90 [ result ])
+                (asm_operands/v:QI ("inb %1, %0") ("=a") 0 [
+                        (reg:HI 91)
+                    ]
+                     [
+                        (asm_input:HI ("Nd") port.h:30)
+                    ]
+                     [] port.h:30))
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:30 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -1 [0xffffffffffffffff])) [0 result+0 S1 A8])
+        (reg:QI 90 [ result ])) port.h:30 93 {*movqi_internal}
+     (nil))
+(insn 10 9 13 2 (set (reg:QI 87 [ D.1456 ])
+        (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -1 [0xffffffffffffffff])) [0 result+0 S1 A8])) port.h:31 93 {*movqi_internal}
+     (nil))
+(insn 13 10 17 2 (set (reg:QI 88 [ <retval> ])
+        (reg:QI 87 [ D.1456 ])) port.h:31 93 {*movqi_internal}
+     (nil))
+(insn 17 13 18 2 (set (reg/i:QI 0 ax)
+        (reg:QI 88 [ <retval> ])) port.h:32 93 {*movqi_internal}
+     (nil))
+(insn 18 17 0 2 (use (reg/i:QI 0 ax)) port.h:32 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static void Port8Bit::Write8(uint16_t, uint8_t) (_ZN8Port8Bit6Write8Eth, funcdef_no=1, decl_uid=1101, cgraph_uid=1, symbol_order=1)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 7 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 87)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:34 90 {*movsi_internal}
+     (nil))
+(insn 4 2 3 2 (set (reg:SI 88)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 _data+0 S4 A32])) port.h:34 90 {*movsi_internal}
+     (nil))
+(insn 3 4 5 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 87) 0)) port.h:34 92 {*movhi_internal}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S1 A32])
+        (subreg:QI (reg:SI 88) 0)) port.h:34 93 {*movqi_internal}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:QI 89)
+        (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S1 A32])) port.h:36 93 {*movqi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:HI 90)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])) port.h:36 92 {*movhi_internal}
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (asm_operands/v ("outb %0, %1") ("") 0 [
+                    (reg:QI 89)
+                    (reg:HI 90)
+                ]
+                 [
+                    (asm_input:QI ("a") port.h:36)
+                    (asm_input:HI ("Nd") port.h:36)
+                ]
+                 [] port.h:36)
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:36 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) port.h:37 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static void Port8BitSlow::Write8Slow(uint16_t, uint8_t) (_ZN12Port8BitSlow10Write8SlowEth, funcdef_no=2, decl_uid=1135, cgraph_uid=2, symbol_order=2)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 7 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 87)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:50 90 {*movsi_internal}
+     (nil))
+(insn 4 2 3 2 (set (reg:SI 88)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 _data+0 S4 A32])) port.h:50 90 {*movsi_internal}
+     (nil))
+(insn 3 4 5 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 87) 0)) port.h:50 92 {*movhi_internal}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S1 A32])
+        (subreg:QI (reg:SI 88) 0)) port.h:50 93 {*movqi_internal}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:QI 89)
+        (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S1 A32])) port.h:52 93 {*movqi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:HI 90)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])) port.h:52 92 {*movhi_internal}
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (asm_operands/v ("outb %0, %1
+jmp 1f
+1: jmp 1f
+1:") ("") 0 [
+                    (reg:QI 89)
+                    (reg:HI 90)
+                ]
+                 [
+                    (asm_input:QI ("a") port.h:52)
+                    (asm_input:HI ("Nd") port.h:52)
+                ]
+                 [] port.h:52)
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:52 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) port.h:53 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static uint16_t Port16Bit::Read16(uint16_t) (_ZN9Port16Bit6Read16Et, funcdef_no=3, decl_uid=1166, cgraph_uid=3, symbol_order=3)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 89)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:69 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 89) 0)) port.h:69 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:HI 91)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])) port.h:72 92 {*movhi_internal}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:HI 90 [ result ])
+                (asm_operands/v:HI ("inw %1, %0") ("=a") 0 [
+                        (reg:HI 91)
+                    ]
+                     [
+                        (asm_input:HI ("Nd") port.h:72)
+                    ]
+                     [] port.h:72))
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:72 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -2 [0xfffffffffffffffe])) [0 result+0 S2 A16])
+        (reg:HI 90 [ result ])) port.h:72 92 {*movhi_internal}
+     (nil))
+(insn 10 9 13 2 (set (reg:HI 87 [ D.1458 ])
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -2 [0xfffffffffffffffe])) [0 result+0 S2 A16])) port.h:73 92 {*movhi_internal}
+     (nil))
+(insn 13 10 17 2 (set (reg:HI 88 [ <retval> ])
+        (reg:HI 87 [ D.1458 ])) port.h:73 92 {*movhi_internal}
+     (nil))
+(insn 17 13 18 2 (set (reg/i:HI 0 ax)
+        (reg:HI 88 [ <retval> ])) port.h:74 92 {*movhi_internal}
+     (nil))
+(insn 18 17 0 2 (use (reg/i:HI 0 ax)) port.h:74 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static void Port16Bit::Write16(uint16_t, uint16_t) (_ZN9Port16Bit7Write16Ett, funcdef_no=4, decl_uid=1169, cgraph_uid=4, symbol_order=4)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 7 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 87)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:76 90 {*movsi_internal}
+     (nil))
+(insn 4 2 3 2 (set (reg:SI 88)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 _data+0 S4 A32])) port.h:76 90 {*movsi_internal}
+     (nil))
+(insn 3 4 5 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 87) 0)) port.h:76 92 {*movhi_internal}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S2 A32])
+        (subreg:HI (reg:SI 88) 0)) port.h:76 92 {*movhi_internal}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:HI 89)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 _data+0 S2 A32])) port.h:78 92 {*movhi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:HI 90)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])) port.h:78 92 {*movhi_internal}
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (asm_operands/v ("outw %0, %1") ("") 0 [
+                    (reg:HI 89)
+                    (reg:HI 90)
+                ]
+                 [
+                    (asm_input:HI ("a") port.h:78)
+                    (asm_input:HI ("Nd") port.h:78)
+                ]
+                 [] port.h:78)
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:78 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) port.h:79 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static uint32_t Port32Bit::Read32(uint16_t) (_ZN9Port32Bit6Read32Et, funcdef_no=5, decl_uid=1204, cgraph_uid=5, symbol_order=5)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 89)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:94 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 89) 0)) port.h:94 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:HI 91)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 _port+0 S2 A32])) port.h:97 92 {*movhi_internal}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:SI 90 [ result ])
+                (asm_operands/v:SI ("inl %1, %0") ("=a") 0 [
+                        (reg:HI 91)
+                    ]
+                     [
+                        (asm_input:HI ("Nd") port.h:97)
+                    ]
+                     [] port.h:97))
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:97 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 result+0 S4 A32])
+        (reg:SI 90 [ result ])) port.h:97 90 {*movsi_internal}
+     (nil))
+(insn 10 9 13 2 (set (reg:SI 87 [ D.1460 ])
+        (mem/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 result+0 S4 A32])) port.h:98 90 {*movsi_internal}
+     (nil))
+(insn 13 10 17 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.1460 ])) port.h:98 90 {*movsi_internal}
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) port.h:99 90 {*movsi_internal}
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 0 ax)) port.h:99 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function static void Port32Bit::Write32(uint16_t, uint32_t) (_ZN9Port32Bit7Write32Etj, funcdef_no=6, decl_uid=1207, cgraph_uid=6, symbol_order=6)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 87)
+        (mem/c:SI (reg/f:SI 16 argp) [0 _port+0 S4 A32])) port.h:101 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])
+        (subreg:HI (reg:SI 87) 0)) port.h:101 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 88)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 _data+0 S4 A32])) port.h:103 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg:HI 89)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 _port+0 S2 A32])) port.h:103 92 {*movhi_internal}
+     (nil))
+(insn 9 8 12 2 (parallel [
+            (asm_operands/v ("outl %0, %1") ("") 0 [
+                    (reg:SI 88)
+                    (reg:HI 89)
+                ]
+                 [
+                    (asm_input:SI ("a") port.h:103)
+                    (asm_input:HI ("Nd") port.h:103)
+                ]
+                 [] port.h:103)
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) port.h:103 -1
+     (nil))
+(insn 12 9 0 2 (const_int 0 [0]) port.h:104 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port::Port(uint16_t) (_ZN4PortC2Et, funcdef_no=8, decl_uid=1074, cgraph_uid=8, symbol_order=8)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 87)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 portnumber+0 S4 A32])) port.cpp:4 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])
+        (subreg:HI (reg:SI 87) 0)) port.cpp:4 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:SI 88)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:6 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg:HI 89)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])) port.cpp:6 92 {*movhi_internal}
+     (nil))
+(insn 9 8 12 2 (set (mem/j:HI (reg/f:SI 88) [0 this_2(D)->portnumber+0 S2 A16])
+        (reg:HI 89)) port.cpp:6 92 {*movhi_internal}
+     (nil))
+(insn 12 9 0 2 (const_int 0 [0]) port.cpp:7 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port::~Port() (_ZN4PortD2Ev, funcdef_no=11, decl_uid=1080, cgraph_uid=11, symbol_order=11)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 2 0 2 (const_int 0 [0]) port.cpp:11 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port8Bit::Port8Bit(uint16_t) (_ZN8Port8BitC2Et, funcdef_no=14, decl_uid=1105, cgraph_uid=14, symbol_order=14)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 portnumber+0 S4 A32])) port.cpp:17 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) port.cpp:17 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1462 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32]))) port.cpp:18 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1463 ])
+                (plus:SI (reg/f:SI 91)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:18 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1462 ])) port.cpp:18 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(insn 11 10 12 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1463 ])) port.cpp:18 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortC2Et") [flags 0x3]  <function_decl 0x7f0d6d6190d8 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 8 [0x8])) port.cpp:18 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:18 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 13 15 2 (set (reg/f:SI 89 [ D.1464 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV8Port8Bit") [flags 0x2]  <var_decl 0x7f0d6d530f30 _ZTV8Port8Bit>)
+                (const_int 8 [0x8])))) port.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 92)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 16 15 19 2 (set (mem/f/j:SI (reg/f:SI 92) [0 this_3(D)->_vptr.Port8Bit+0 S4 A32])
+        (reg/f:SI 89 [ D.1464 ])) port.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 19 16 0 2 (const_int 0 [0]) port.cpp:20 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port8Bit::~Port8Bit() (_ZN8Port8BitD2Ev, funcdef_no=17, decl_uid=1111, cgraph_uid=17, symbol_order=17)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1465 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV8Port8Bit") [flags 0x2]  <var_decl 0x7f0d6d530f30 _ZTV8Port8Bit>)
+                (const_int 8 [0x8])))) port.cpp:22 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:22 90 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 89) [0 this_3(D)->_vptr.Port8Bit+0 S4 A32])
+        (reg/f:SI 87 [ D.1465 ])) port.cpp:22 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 90)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:22 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1466 ])
+                (plus:SI (reg/f:SI 90)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:22 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1466 ])) port.cpp:22 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortD2Ev") [flags 0x3]  <function_decl 0x7f0d6d619288 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 4 [0x4])) port.cpp:22 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 12 11 15 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:22 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 15 12 0 2 (const_int 0 [0]) port.cpp:24 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual void Port8Bit::Write(uint8_t) (_ZN8Port8Bit5WriteEh, funcdef_no=19, decl_uid=1095, cgraph_uid=19, symbol_order=19)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 data+0 S4 A32])) port.cpp:27 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 data+0 S1 A32])
+        (subreg:QI (reg:SI 90) 0)) port.cpp:27 93 {*movqi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1467 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 data+0 S1 A32]))) port.cpp:28 138 {*zero_extendqisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:28 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.1468 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_4(D)->D.1115.portnumber+0 S2 A32])) port.cpp:28 92 {*movhi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.1467 ])
+        (zero_extend:SI (reg:HI 88 [ D.1468 ]))) port.cpp:28 139 {*zero_extendhisi2}
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:28 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 12 11 13 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1467 ])) port.cpp:28 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 13 12 14 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 89 [ D.1467 ])) port.cpp:28 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 14 13 15 2 (call (mem:QI (symbol_ref/i:SI ("_ZN8Port8Bit6Write8Eth") [flags 0x3]  <function_decl 0x7f0d6d619798 Write8>) [0 Write8 S1 A8])
+        (const_int 16 [0x10])) port.cpp:28 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 15 14 18 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:28 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 18 15 0 2 (const_int 0 [0]) port.cpp:29 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual uint8_t Port8Bit::Read() (_ZN8Port8Bit4ReadEv, funcdef_no=20, decl_uid=1092, cgraph_uid=20, symbol_order=20)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:33 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:HI 87 [ D.1469 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_2(D)->D.1115.portnumber+0 S2 A32])) port.cpp:33 92 {*movhi_internal}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 88 [ D.1470 ])
+        (zero_extend:SI (reg:HI 87 [ D.1469 ]))) port.cpp:33 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:33 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 88 [ D.1470 ])) port.cpp:33 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 10 9 11 2 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref/i:SI ("_ZN8Port8Bit5Read8Et") [flags 0x3]  <function_decl 0x7f0d6d6196c0 Read8>) [0 Read8 S1 A8])
+            (const_int 16 [0x10]))) port.cpp:33 668 {*call_value}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:33 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 12 11 15 2 (set (reg:QI 89 [ D.1471 ])
+        (reg:QI 0 ax)) port.cpp:33 93 {*movqi_internal}
+     (nil))
+(insn 15 12 19 2 (set (reg:QI 90 [ <retval> ])
+        (reg:QI 89 [ D.1471 ])) port.cpp:33 93 {*movqi_internal}
+     (nil))
+(insn 19 15 20 2 (set (reg/i:QI 0 ax)
+        (reg:QI 90 [ <retval> ])) port.cpp:34 93 {*movqi_internal}
+     (nil))
+(insn 20 19 0 2 (use (reg/i:QI 0 ax)) port.cpp:34 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port8BitSlow::Port8BitSlow(uint16_t) (_ZN12Port8BitSlowC2Et, funcdef_no=22, decl_uid=1139, cgraph_uid=22, symbol_order=22)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 portnumber+0 S4 A32])) port.cpp:40 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) port.cpp:40 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1472 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32]))) port.cpp:41 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 88 [ D.1473 ])
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:41 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1472 ])) port.cpp:41 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(insn 10 9 11 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1473 ])) port.cpp:41 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitC2Et") [flags 0x3]  <function_decl 0x7f0d6d619948 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 8 [0x8])) port.cpp:41 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:41 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 13 12 14 2 (set (reg/f:SI 89 [ D.1474 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV12Port8BitSlow") [flags 0x2]  <var_decl 0x7f0d6d6202d0 _ZTV12Port8BitSlow>)
+                (const_int 8 [0x8])))) port.cpp:41 90 {*movsi_internal}
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:41 90 {*movsi_internal}
+     (nil))
+(insn 15 14 18 2 (set (mem/f/j:SI (reg/f:SI 91) [0 this_3(D)->D.1148._vptr.Port8Bit+0 S4 A32])
+        (reg/f:SI 89 [ D.1474 ])) port.cpp:41 90 {*movsi_internal}
+     (nil))
+(insn 18 15 0 2 (const_int 0 [0]) port.cpp:43 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port8BitSlow::~Port8BitSlow() (_ZN12Port8BitSlowD2Ev, funcdef_no=25, decl_uid=1145, cgraph_uid=25, symbol_order=25)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1475 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV12Port8BitSlow") [flags 0x2]  <var_decl 0x7f0d6d6202d0 _ZTV12Port8BitSlow>)
+                (const_int 8 [0x8])))) port.cpp:45 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:45 90 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 89) [0 this_3(D)->D.1148._vptr.Port8Bit+0 S4 A32])
+        (reg/f:SI 87 [ D.1475 ])) port.cpp:45 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 88 [ D.1476 ])
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:45 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1476 ])) port.cpp:45 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitD2Ev") [flags 0x3]  <function_decl 0x7f0d6d619af8 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 4 [0x4])) port.cpp:45 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 11 10 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:45 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 11 0 2 (const_int 0 [0]) port.cpp:47 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual void Port8BitSlow::Write(uint8_t) (_ZN12Port8BitSlow5WriteEh, funcdef_no=27, decl_uid=1131, cgraph_uid=27, symbol_order=27)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 data+0 S4 A32])) port.cpp:50 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 data+0 S1 A32])
+        (subreg:QI (reg:SI 90) 0)) port.cpp:50 93 {*movqi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1477 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 data+0 S1 A32]))) port.cpp:51 138 {*zero_extendqisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:51 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.1478 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_4(D)->D.1148.D.1115.portnumber+0 S2 A32])) port.cpp:51 92 {*movhi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.1477 ])
+        (zero_extend:SI (reg:HI 88 [ D.1478 ]))) port.cpp:51 139 {*zero_extendhisi2}
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:51 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 12 11 13 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1477 ])) port.cpp:51 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 13 12 14 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 89 [ D.1477 ])) port.cpp:51 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 14 13 15 2 (call (mem:QI (symbol_ref/i:SI ("_ZN12Port8BitSlow10Write8SlowEth") [flags 0x3]  <function_decl 0x7f0d6d6240d8 Write8Slow>) [0 Write8Slow S1 A8])
+        (const_int 16 [0x10])) port.cpp:51 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 15 14 18 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:51 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 18 15 0 2 (const_int 0 [0]) port.cpp:52 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port16Bit::Port16Bit(uint16_t) (_ZN9Port16BitC2Et, funcdef_no=29, decl_uid=1173, cgraph_uid=29, symbol_order=29)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 portnumber+0 S4 A32])) port.cpp:58 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) port.cpp:58 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1479 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32]))) port.cpp:59 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:59 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1480 ])
+                (plus:SI (reg/f:SI 91)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:59 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1479 ])) port.cpp:59 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(insn 11 10 12 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1480 ])) port.cpp:59 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortC2Et") [flags 0x3]  <function_decl 0x7f0d6d6190d8 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 8 [0x8])) port.cpp:59 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:59 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 13 15 2 (set (reg/f:SI 89 [ D.1481 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV9Port16Bit") [flags 0x2]  <var_decl 0x7f0d6d6206c0 _ZTV9Port16Bit>)
+                (const_int 8 [0x8])))) port.cpp:59 90 {*movsi_internal}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 92)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:59 90 {*movsi_internal}
+     (nil))
+(insn 16 15 19 2 (set (mem/f/j:SI (reg/f:SI 92) [0 this_3(D)->_vptr.Port16Bit+0 S4 A32])
+        (reg/f:SI 89 [ D.1481 ])) port.cpp:59 90 {*movsi_internal}
+     (nil))
+(insn 19 16 0 2 (const_int 0 [0]) port.cpp:61 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port16Bit::~Port16Bit() (_ZN9Port16BitD2Ev, funcdef_no=32, decl_uid=1179, cgraph_uid=32, symbol_order=32)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1482 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV9Port16Bit") [flags 0x2]  <var_decl 0x7f0d6d6206c0 _ZTV9Port16Bit>)
+                (const_int 8 [0x8])))) port.cpp:63 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:63 90 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 89) [0 this_3(D)->_vptr.Port16Bit+0 S4 A32])
+        (reg/f:SI 87 [ D.1482 ])) port.cpp:63 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 90)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:63 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1483 ])
+                (plus:SI (reg/f:SI 90)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:63 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1483 ])) port.cpp:63 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortD2Ev") [flags 0x3]  <function_decl 0x7f0d6d619288 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 4 [0x4])) port.cpp:63 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 12 11 15 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:63 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 15 12 0 2 (const_int 0 [0]) port.cpp:65 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual void Port16Bit::Write(uint16_t) (_ZN9Port16Bit5WriteEt, funcdef_no=34, decl_uid=1163, cgraph_uid=34, symbol_order=34)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 data+0 S4 A32])) port.cpp:68 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 data+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) port.cpp:68 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1484 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 data+0 S2 A32]))) port.cpp:69 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:69 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.1485 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_4(D)->D.1183.portnumber+0 S2 A32])) port.cpp:69 92 {*movhi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.1484 ])
+        (zero_extend:SI (reg:HI 88 [ D.1485 ]))) port.cpp:69 139 {*zero_extendhisi2}
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:69 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 12 11 13 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1484 ])) port.cpp:69 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 13 12 14 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 89 [ D.1484 ])) port.cpp:69 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 14 13 15 2 (call (mem:QI (symbol_ref/i:SI ("_ZN9Port16Bit7Write16Ett") [flags 0x3]  <function_decl 0x7f0d6d624a20 Write16>) [0 Write16 S1 A8])
+        (const_int 16 [0x10])) port.cpp:69 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 15 14 18 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:69 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 18 15 0 2 (const_int 0 [0]) port.cpp:70 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual uint16_t Port16Bit::Read() (_ZN9Port16Bit4ReadEv, funcdef_no=35, decl_uid=1160, cgraph_uid=35, symbol_order=35)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:74 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:HI 87 [ D.1486 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_2(D)->D.1183.portnumber+0 S2 A32])) port.cpp:74 92 {*movhi_internal}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 88 [ D.1487 ])
+        (zero_extend:SI (reg:HI 87 [ D.1486 ]))) port.cpp:74 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:74 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 88 [ D.1487 ])) port.cpp:74 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 10 9 11 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref/i:SI ("_ZN9Port16Bit6Read16Et") [flags 0x3]  <function_decl 0x7f0d6d624948 Read16>) [0 Read16 S1 A8])
+            (const_int 16 [0x10]))) port.cpp:74 668 {*call_value}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:74 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 12 11 15 2 (set (reg:HI 89 [ D.1488 ])
+        (reg:HI 0 ax)) port.cpp:74 92 {*movhi_internal}
+     (nil))
+(insn 15 12 19 2 (set (reg:HI 90 [ <retval> ])
+        (reg:HI 89 [ D.1488 ])) port.cpp:74 92 {*movhi_internal}
+     (nil))
+(insn 19 15 20 2 (set (reg/i:HI 0 ax)
+        (reg:HI 90 [ <retval> ])) port.cpp:75 92 {*movhi_internal}
+     (nil))
+(insn 20 19 0 2 (use (reg/i:HI 0 ax)) port.cpp:75 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port32Bit::Port32Bit(uint16_t) (_ZN9Port32BitC2Et, funcdef_no=37, decl_uid=1211, cgraph_uid=37, symbol_order=37)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 portnumber+0 S4 A32])) port.cpp:81 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) port.cpp:81 92 {*movhi_internal}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1489 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 portnumber+0 S2 A32]))) port.cpp:82 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:82 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1490 ])
+                (plus:SI (reg/f:SI 91)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:82 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 87 [ D.1489 ])) port.cpp:82 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(insn 11 10 12 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1490 ])) port.cpp:82 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortC2Et") [flags 0x3]  <function_decl 0x7f0d6d6190d8 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 8 [0x8])) port.cpp:82 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:82 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 13 15 2 (set (reg/f:SI 89 [ D.1491 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV9Port32Bit") [flags 0x2]  <var_decl 0x7f0d6d620c60 _ZTV9Port32Bit>)
+                (const_int 8 [0x8])))) port.cpp:82 90 {*movsi_internal}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 92)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:82 90 {*movsi_internal}
+     (nil))
+(insn 16 15 19 2 (set (mem/f/j:SI (reg/f:SI 92) [0 this_3(D)->_vptr.Port32Bit+0 S4 A32])
+        (reg/f:SI 89 [ D.1491 ])) port.cpp:82 90 {*movsi_internal}
+     (nil))
+(insn 19 16 0 2 (const_int 0 [0]) port.cpp:84 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function Port32Bit::~Port32Bit() (_ZN9Port32BitD2Ev, funcdef_no=40, decl_uid=1217, cgraph_uid=40, symbol_order=40)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1492 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV9Port32Bit") [flags 0x2]  <var_decl 0x7f0d6d620c60 _ZTV9Port32Bit>)
+                (const_int 8 [0x8])))) port.cpp:86 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:86 90 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 89) [0 this_3(D)->_vptr.Port32Bit+0 S4 A32])
+        (reg/f:SI 87 [ D.1492 ])) port.cpp:86 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 90)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:86 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1493 ])
+                (plus:SI (reg/f:SI 90)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:86 217 {*addsi_1}
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 10 9 11 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1493 ])) port.cpp:86 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:SI ("_ZN4PortD2Ev") [flags 0x3]  <function_decl 0x7f0d6d619288 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 4 [0x4])) port.cpp:86 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 12 11 15 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:86 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 15 12 0 2 (const_int 0 [0]) port.cpp:88 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual void Port32Bit::Write(uint32_t) (_ZN9Port32Bit5WriteEj, funcdef_no=42, decl_uid=1201, cgraph_uid=42, symbol_order=42)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:92 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:HI 87 [ D.1494 ])
+        (mem/j:HI (plus:SI (reg/f:SI 89)
+                (const_int 4 [0x4])) [0 this_2(D)->D.1221.portnumber+0 S2 A32])) port.cpp:92 92 {*movhi_internal}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 88 [ D.1495 ])
+        (zero_extend:SI (reg:HI 87 [ D.1494 ]))) port.cpp:92 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:92 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 data+0 S4 A32])) port.cpp:92 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 88 [ D.1495 ])) port.cpp:92 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref/i:SI ("_ZN9Port32Bit7Write32Etj") [flags 0x3]  <function_decl 0x7f0d6d62b510 Write32>) [0 Write32 S1 A8])
+        (const_int 16 [0x10])) port.cpp:92 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 12 11 15 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:92 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 15 12 0 2 (const_int 0 [0]) port.cpp:93 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual uint32_t Port32Bit::Read() (_ZN9Port32Bit4ReadEv, funcdef_no=43, decl_uid=1198, cgraph_uid=43, symbol_order=43)
+
+Reordered sequence:
+ 2 bb 2  [0]
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) port.cpp:97 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:HI 87 [ D.1496 ])
+        (mem/j:HI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_2(D)->D.1221.portnumber+0 S2 A32])) port.cpp:97 92 {*movhi_internal}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 88 [ D.1497 ])
+        (zero_extend:SI (reg:HI 87 [ D.1496 ]))) port.cpp:97 139 {*zero_extendhisi2}
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:97 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 88 [ D.1497 ])) port.cpp:97 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref/i:SI ("_ZN9Port32Bit6Read32Et") [flags 0x3]  <function_decl 0x7f0d6d62b438 Read32>) [0 Read32 S1 A8])
+            (const_int 16 [0x10]))) port.cpp:97 668 {*call_value}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) port.cpp:97 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 12 11 15 2 (set (reg:SI 89 [ D.1498 ])
+        (reg:SI 0 ax)) port.cpp:97 90 {*movsi_internal}
+     (nil))
+(insn 15 12 19 2 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ D.1498 ])) port.cpp:97 90 {*movsi_internal}
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) port.cpp:98 90 {*movsi_internal}
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 0 ax)) port.cpp:98 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+

@@ -1,0 +1,2535 @@
+
+;; Function KeyboardDriver::KeyboardDriver(InterruptManager*) (_ZN14KeyboardDriverC2EP16InterruptManager, funcdef_no=8, decl_uid=1403, cgraph_uid=8, symbol_order=8)
+
+KeyboardDriver::KeyboardDriver(InterruptManager*) (struct KeyboardDriver * const this, struct InterruptManager * manager)
+{
+  uint8_t status;
+  struct InterruptHandler * D.1507;
+  struct Port8Bit * D.1506;
+  struct Port8Bit * D.1505;
+  struct Port8Bit * D.1504;
+  struct Port8Bit * D.1503;
+  int D.1502;
+  struct Port8Bit * D.1501;
+  unsigned char D.1500;
+  unsigned char D.1499;
+  struct Port8Bit * D.1498;
+  struct Port8Bit * D.1497;
+  struct Port8Bit * D.1496;
+  struct Port8Bit * D.1495;
+  int D.1493;
+  int D.1492;
+  unsigned char D.1491;
+  struct Port8Bit * D.1490;
+  bool retval.0;
+  struct Port8Bit * D.1487;
+  struct Port8Bit * D.1486;
+  int (*__vtbl_ptr_type) () * D.1485;
+  struct InterruptHandler * D.1484;
+  struct InterruptHandler * _3;
+  int (*__vtbl_ptr_type) () * _7;
+  struct Port8Bit * _9;
+  struct Port8Bit * _11;
+  struct Port8Bit * _13;
+  unsigned char _15;
+  int _16;
+  int _17;
+  bool retval.0_18;
+  struct Port8Bit * _19;
+  struct Port8Bit * _21;
+  struct Port8Bit * _23;
+  struct Port8Bit * _25;
+  unsigned char _27;
+  unsigned char _28;
+  struct Port8Bit * _30;
+  int _32;
+  struct Port8Bit * _33;
+  struct Port8Bit * _35;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _3 = &this_2(D)->D.1412;
+  InterruptHandler::InterruptHandler (_3, 33, manager_5(D));
+  _7 = &_ZTV14KeyboardDriver + 8;
+  this_2(D)->D.1412._vptr.InterruptHandler = _7;
+  _9 = &this_2(D)->dataPort;
+  Port8Bit::Port8Bit (_9, 96);
+  _11 = &this_2(D)->commandPort;
+  Port8Bit::Port8Bit (_11, 100);
+;;    succ:       3
+
+;;   basic block 3, loop depth 1
+;;    pred:       2
+;;                4
+  _13 = &this_2(D)->commandPort;
+  _15 = Port8Bit::Read (_13);
+  _16 = (int) _15;
+  _17 = _16 & 1;
+  retval.0_18 = _17 != 0;
+  if (retval.0_18 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+;;    succ:       4
+;;                5
+
+;;   basic block 4, loop depth 1
+;;    pred:       3
+  _19 = &this_2(D)->dataPort;
+  Port8Bit::Read (_19);
+  goto <bb 3>;
+;;    succ:       3
+
+;;   basic block 5, loop depth 0
+;;    pred:       3
+  _21 = &this_2(D)->commandPort;
+  Port8Bit::Write (_21, 174);
+  _23 = &this_2(D)->commandPort;
+  Port8Bit::Write (_23, 32);
+  _25 = &this_2(D)->dataPort;
+  _27 = Port8Bit::Read (_25);
+  _28 = _27 | 1;
+  status_29 = _28 & 239;
+  _30 = &this_2(D)->commandPort;
+  Port8Bit::Write (_30, 96);
+  _32 = (int) status_29;
+  _33 = &this_2(D)->dataPort;
+  Port8Bit::Write (_33, _32);
+  _35 = &this_2(D)->dataPort;
+  Port8Bit::Write (_35, 244);
+  return;
+;;    succ:       EXIT
+
+}
+
+
+
+Partition map 
+
+Partition 2 (this_2(D) - 2 )
+Partition 3 (_3 - 3 )
+Partition 5 (manager_5(D) - 5 )
+Partition 7 (_7 - 7 )
+Partition 9 (_9 - 9 )
+Partition 11 (_11 - 11 )
+Partition 13 (_13 - 13 )
+Partition 15 (_15 - 15 )
+Partition 16 (_16 - 16 )
+Partition 17 (_17 - 17 )
+Partition 18 (retval.0_18 - 18 )
+Partition 19 (_19 - 19 )
+Partition 21 (_21 - 21 )
+Partition 23 (_23 - 23 )
+Partition 25 (_25 - 25 )
+Partition 27 (_27 - 27 )
+Partition 28 (_28 - 28 )
+Partition 29 (status_29 - 29 )
+Partition 30 (_30 - 30 )
+Partition 32 (_32 - 32 )
+Partition 33 (_33 - 33 )
+Partition 35 (_35 - 35 )
+
+
+Partition map 
+
+Partition 0 (this_2(D) - 2 )
+Partition 1 (manager_5(D) - 5 )
+
+
+Conflict graph:
+
+After sorting:
+Coalesce List:
+
+Partition map 
+
+Partition 0 (this_2(D) - 2 )
+Partition 1 (manager_5(D) - 5 )
+
+After Coalescing:
+
+Partition map 
+
+Partition 0 (this_2(D) - 2 )
+Partition 1 (_3 - 3 )
+Partition 2 (manager_5(D) - 5 )
+Partition 3 (_7 - 7 )
+Partition 4 (_9 - 9 )
+Partition 5 (_11 - 11 )
+Partition 6 (_13 - 13 )
+Partition 7 (_15 - 15 )
+Partition 8 (_16 - 16 )
+Partition 9 (_17 - 17 )
+Partition 10 (retval.0_18 - 18 )
+Partition 11 (_19 - 19 )
+Partition 12 (_21 - 21 )
+Partition 13 (_23 - 23 )
+Partition 14 (_25 - 25 )
+Partition 15 (_27 - 27 )
+Partition 16 (_28 - 28 )
+Partition 17 (status_29 - 29 )
+Partition 18 (_30 - 30 )
+Partition 19 (_32 - 32 )
+Partition 20 (_33 - 33 )
+Partition 21 (_35 - 35 )
+
+KeyboardDriver::KeyboardDriver(InterruptManager*) (struct KeyboardDriver * const this, struct InterruptManager * manager)
+{
+  uint8_t status;
+  struct InterruptHandler * D.1507;
+  struct Port8Bit * D.1506;
+  struct Port8Bit * D.1505;
+  struct Port8Bit * D.1504;
+  struct Port8Bit * D.1503;
+  int D.1502;
+  struct Port8Bit * D.1501;
+  unsigned char D.1500;
+  unsigned char D.1499;
+  struct Port8Bit * D.1498;
+  struct Port8Bit * D.1497;
+  struct Port8Bit * D.1496;
+  struct Port8Bit * D.1495;
+  int D.1493;
+  int D.1492;
+  unsigned char D.1491;
+  struct Port8Bit * D.1490;
+  bool retval.0;
+  struct Port8Bit * D.1487;
+  struct Port8Bit * D.1486;
+  int (*__vtbl_ptr_type) () * D.1485;
+  struct InterruptHandler * D.1484;
+  struct InterruptHandler * _3;
+  int (*__vtbl_ptr_type) () * _7;
+  struct Port8Bit * _9;
+  struct Port8Bit * _11;
+  struct Port8Bit * _13;
+  unsigned char _15;
+  int _16;
+  int _17;
+  bool retval.0_18;
+  struct Port8Bit * _19;
+  struct Port8Bit * _21;
+  struct Port8Bit * _23;
+  struct Port8Bit * _25;
+  unsigned char _27;
+  unsigned char _28;
+  struct Port8Bit * _30;
+  int _32;
+  struct Port8Bit * _33;
+  struct Port8Bit * _35;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _3 = &this_2(D)->D.1412;
+  InterruptHandler::InterruptHandler (_3, 33, manager_5(D));
+  _7 = &_ZTV14KeyboardDriver + 8;
+  this_2(D)->D.1412._vptr.InterruptHandler = _7;
+  _9 = &this_2(D)->dataPort;
+  Port8Bit::Port8Bit (_9, 96);
+  _11 = &this_2(D)->commandPort;
+  Port8Bit::Port8Bit (_11, 100);
+;;    succ:       3
+
+;;   basic block 3, loop depth 1
+;;    pred:       2
+;;                4
+  _13 = &this_2(D)->commandPort;
+  _15 = Port8Bit::Read (_13);
+  _16 = (int) _15;
+  _17 = _16 & 1;
+  retval.0_18 = _17 != 0;
+  if (retval.0_18 != 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+;;    succ:       4
+;;                5
+
+;;   basic block 4, loop depth 1
+;;    pred:       3
+  _19 = &this_2(D)->dataPort;
+  Port8Bit::Read (_19);
+  goto <bb 3>;
+;;    succ:       3
+
+;;   basic block 5, loop depth 0
+;;    pred:       3
+  _21 = &this_2(D)->commandPort;
+  Port8Bit::Write (_21, 174);
+  _23 = &this_2(D)->commandPort;
+  Port8Bit::Write (_23, 32);
+  _25 = &this_2(D)->dataPort;
+  _27 = Port8Bit::Read (_25);
+  _28 = _27 | 1;
+  status_29 = _28 & 239;
+  _30 = &this_2(D)->commandPort;
+  Port8Bit::Write (_30, 96);
+  _32 = (int) status_29;
+  _33 = &this_2(D)->dataPort;
+  Port8Bit::Write (_33, _32);
+  _35 = &this_2(D)->dataPort;
+  Port8Bit::Write (_35, 244);
+  return;
+;;    succ:       EXIT
+
+}
+
+
+
+;; Generating RTL for gimple basic block 2
+
+;; _3 = &this_2(D)->D.1412;
+
+(insn 5 4 0 (set (reg/f:SI 87 [ D.1528 ])
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+
+;; InterruptHandler::InterruptHandler (_3, 33, manager_5(D));
+
+(insn 6 5 7 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -4 [0xfffffffffffffffc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+
+(insn 7 6 8 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 81 virtual-incoming-args)
+                (const_int 4 [0x4])) [0 manager+0 S4 A32])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 8 7 9 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 33 [0x21])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 9 8 10 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 87 [ D.1528 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 10 9 11 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptHandlerC2EhP16InterruptManager") [flags 0x41]  <function_decl 0x7efe750acaf8 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+
+(insn 11 10 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _7 = &_ZTV14KeyboardDriver + 8;
+
+(insn 12 11 0 (set (reg/f:SI 88 [ D.1529 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV14KeyboardDriver") [flags 0x2]  <var_decl 0x7efe750bf090 _ZTV14KeyboardDriver>)
+                (const_int 8 [0x8])))) keyboard.cpp:6 -1
+     (nil))
+
+;; this_2(D)->D.1412._vptr.InterruptHandler = _7;
+
+(insn 13 12 14 (set (reg/f:SI 106)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+
+(insn 14 13 0 (set (mem/f/j:SI (reg/f:SI 106) [0 this_2(D)->D.1412._vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 88 [ D.1529 ])) keyboard.cpp:6 -1
+     (nil))
+
+;; _9 = &this_2(D)->dataPort;
+
+(insn 15 14 16 (set (reg/f:SI 107)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+
+(insn 16 15 0 (parallel [
+            (set (reg/f:SI 89 [ D.1530 ])
+                (plus:SI (reg/f:SI 107)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; Port8Bit::Port8Bit (_9, 96);
+
+(insn 17 16 18 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 18 17 19 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 96 [0x60])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 19 18 20 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 89 [ D.1530 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 20 19 21 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitC1Et") [flags 0x41]  <function_decl 0x7efe7509d510 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+
+(insn 21 20 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _11 = &this_2(D)->commandPort;
+
+(insn 22 21 23 (set (reg/f:SI 108)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+
+(insn 23 22 0 (parallel [
+            (set (reg/f:SI 90 [ D.1530 ])
+                (plus:SI (reg/f:SI 108)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; Port8Bit::Port8Bit (_11, 100);
+
+(insn 24 23 25 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 25 24 26 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 100 [0x64])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 26 25 27 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1530 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 27 26 28 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitC1Et") [flags 0x41]  <function_decl 0x7efe7509d510 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+
+(insn 28 27 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; Generating RTL for gimple basic block 3
+
+;; _13 = &this_2(D)->commandPort;
+
+(insn 30 29 31 (set (reg/f:SI 109)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:7 -1
+     (nil))
+
+(insn 31 30 0 (parallel [
+            (set (reg/f:SI 91 [ D.1530 ])
+                (plus:SI (reg/f:SI 109)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; _15 = Port8Bit::Read (_13);
+
+(insn 32 31 33 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 33 32 34 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 91 [ D.1530 ])) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 34 33 35 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:7 -1
+     (nil)
+    (nil))
+
+(insn 35 34 36 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+(insn 36 35 0 (set (reg:QI 92 [ D.1531 ])
+        (reg:QI 0 ax)) keyboard.cpp:7 -1
+     (nil))
+
+;; _16 = (int) _15;
+
+(insn 37 36 0 (set (reg:SI 93 [ D.1532 ])
+        (zero_extend:SI (reg:QI 92 [ D.1531 ]))) keyboard.cpp:7 -1
+     (nil))
+
+;; _17 = _16 & 1;
+
+(insn 38 37 0 (parallel [
+            (set (reg:SI 94 [ D.1532 ])
+                (and:SI (reg:SI 93 [ D.1532 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (nil))
+
+;; _18 = _17 != 0;
+
+(insn 39 38 40 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.1532 ])
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+
+(insn 40 39 0 (set (reg:QI 95 [ D.1533 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+
+;; if (_18 != 0)
+
+(insn 41 40 42 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 95 [ D.1533 ])
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+
+(jump_insn 42 41 0 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 0)
+            (pc))) keyboard.cpp:7 -1
+     (nil))
+
+;; Generating RTL for gimple basic block 4
+
+;; _19 = &this_2(D)->dataPort;
+
+(insn 44 43 45 (set (reg/f:SI 110)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:8 -1
+     (nil))
+
+(insn 45 44 0 (parallel [
+            (set (reg/f:SI 96 [ D.1530 ])
+                (plus:SI (reg/f:SI 110)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; Port8Bit::Read (_19);
+
+(insn 46 45 47 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 47 46 48 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 96 [ D.1530 ])) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 48 47 49 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:8 -1
+     (nil)
+    (nil))
+
+(insn 49 48 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; Generating RTL for gimple basic block 5
+
+;; 
+
+(code_label 53 52 54 2 "" [0 uses])
+
+(note 54 53 0 NOTE_INSN_BASIC_BLOCK)
+
+;; _21 = &this_2(D)->commandPort;
+
+(insn 55 54 56 (set (reg/f:SI 111)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:9 -1
+     (nil))
+
+(insn 56 55 0 (parallel [
+            (set (reg/f:SI 97 [ D.1530 ])
+                (plus:SI (reg/f:SI 111)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; Port8Bit::Write (_21, 174);
+
+(insn 57 56 58 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 58 57 59 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 174 [0xae])) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 59 58 60 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 97 [ D.1530 ])) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 60 59 61 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:9 -1
+     (nil)
+    (nil))
+
+(insn 61 60 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _23 = &this_2(D)->commandPort;
+
+(insn 62 61 63 (set (reg/f:SI 112)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:10 -1
+     (nil))
+
+(insn 63 62 0 (parallel [
+            (set (reg/f:SI 98 [ D.1530 ])
+                (plus:SI (reg/f:SI 112)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; Port8Bit::Write (_23, 32);
+
+(insn 64 63 65 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 65 64 66 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 66 65 67 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 98 [ D.1530 ])) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 67 66 68 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:10 -1
+     (nil)
+    (nil))
+
+(insn 68 67 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _25 = &this_2(D)->dataPort;
+
+(insn 69 68 70 (set (reg/f:SI 113)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:11 -1
+     (nil))
+
+(insn 70 69 0 (parallel [
+            (set (reg/f:SI 99 [ D.1530 ])
+                (plus:SI (reg/f:SI 113)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; _27 = Port8Bit::Read (_25);
+
+(insn 71 70 72 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 72 71 73 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 99 [ D.1530 ])) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 73 72 74 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:11 -1
+     (nil)
+    (nil))
+
+(insn 74 73 75 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+(insn 75 74 0 (set (reg:QI 100 [ D.1531 ])
+        (reg:QI 0 ax)) keyboard.cpp:11 -1
+     (nil))
+
+;; _28 = _27 | 1;
+
+(insn 76 75 0 (parallel [
+            (set (reg:QI 101 [ D.1531 ])
+                (ior:QI (reg:QI 100 [ D.1531 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (nil))
+
+;; status_29 = _28 & 239;
+
+(insn 77 76 78 (parallel [
+            (set (reg:QI 114)
+                (and:QI (reg:QI 101 [ D.1531 ])
+                    (const_int -17 [0xffffffffffffffef])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (nil))
+
+(insn 78 77 0 (set (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 status+0 S1 A8])
+        (reg:QI 114)) keyboard.cpp:11 -1
+     (nil))
+
+;; _30 = &this_2(D)->commandPort;
+
+(insn 79 78 80 (set (reg/f:SI 115)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:12 -1
+     (nil))
+
+(insn 80 79 0 (parallel [
+            (set (reg/f:SI 102 [ D.1530 ])
+                (plus:SI (reg/f:SI 115)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; Port8Bit::Write (_30, 96);
+
+(insn 81 80 82 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 82 81 83 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 96 [0x60])) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 83 82 84 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 102 [ D.1530 ])) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 84 83 85 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:12 -1
+     (nil)
+    (nil))
+
+(insn 85 84 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _32 = (int) status_29;
+
+(insn 86 85 0 (set (reg:SI 103 [ D.1532 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 status+0 S1 A8]))) keyboard.cpp:13 -1
+     (nil))
+
+;; _33 = &this_2(D)->dataPort;
+
+(insn 87 86 88 (set (reg/f:SI 116)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:13 -1
+     (nil))
+
+(insn 88 87 0 (parallel [
+            (set (reg/f:SI 104 [ D.1530 ])
+                (plus:SI (reg/f:SI 116)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; Port8Bit::Write (_33, _32);
+
+(insn 89 88 90 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 90 89 91 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 103 [ D.1532 ])) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 91 90 92 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 104 [ D.1530 ])) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 92 91 93 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:13 -1
+     (nil)
+    (nil))
+
+(insn 93 92 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _35 = &this_2(D)->dataPort;
+
+(insn 94 93 95 (set (reg/f:SI 117)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:14 -1
+     (nil))
+
+(insn 95 94 0 (parallel [
+            (set (reg/f:SI 105 [ D.1530 ])
+                (plus:SI (reg/f:SI 117)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; Port8Bit::Write (_35, 244);
+
+(insn 96 95 97 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+
+(insn 97 96 98 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 244 [0xf4])) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 98 97 99 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 105 [ D.1530 ])) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 99 98 100 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:14 -1
+     (nil)
+    (nil))
+
+(insn 100 99 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 4, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1528 ])
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -4 [0xfffffffffffffffc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+        (nil)))
+(insn 7 6 8 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 81 virtual-incoming-args)
+                (const_int 4 [0x4])) [0 manager+0 S4 A32])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 8 7 9 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 33 [0x21])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 9 8 10 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 87 [ D.1528 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptHandlerC2EhP16InterruptManager") [flags 0x41]  <function_decl 0x7efe750acaf8 __base_ctor >) [0 __base_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 12 11 13 2 (set (reg/f:SI 88 [ D.1529 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV14KeyboardDriver") [flags 0x2]  <var_decl 0x7efe750bf090 _ZTV14KeyboardDriver>)
+                (const_int 8 [0x8])))) keyboard.cpp:6 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 106)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/j:SI (reg/f:SI 106) [0 this_2(D)->D.1412._vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 88 [ D.1529 ])) keyboard.cpp:6 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 107)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg/f:SI 89 [ D.1530 ])
+                (plus:SI (reg/f:SI 107)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 17 16 18 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 18 17 19 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 96 [0x60])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 19 18 20 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 89 [ D.1530 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 20 19 21 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitC1Et") [flags 0x41]  <function_decl 0x7efe7509d510 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 22 21 23 2 (set (reg/f:SI 108)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:6 -1
+     (nil))
+(insn 23 22 24 2 (parallel [
+            (set (reg/f:SI 90 [ D.1530 ])
+                (plus:SI (reg/f:SI 108)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 24 23 25 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 25 24 26 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 100 [0x64])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 26 25 27 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1530 ])) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 27 26 28 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitC1Et") [flags 0x41]  <function_decl 0x7efe7509d510 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:6 -1
+     (nil)
+    (nil))
+(insn 28 27 50 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:6 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+;;  succ:       4 (FALLTHRU)
+
+;; basic block 4, loop depth 1, count 0, freq 0, maybe hot
+;;  prev block 2, next block 5, flags: (NEW, REACHABLE, RTL)
+;;  pred:       2 (FALLTHRU)
+;;              5 (DFS_BACK)
+(code_label 50 28 29 4 3 "" [1 uses])
+(note 29 50 30 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 4 (set (reg/f:SI 109)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:7 -1
+     (nil))
+(insn 31 30 32 4 (parallel [
+            (set (reg/f:SI 91 [ D.1530 ])
+                (plus:SI (reg/f:SI 109)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 32 31 33 4 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 33 32 34 4 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 91 [ D.1530 ])) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 34 33 35 4 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:7 -1
+     (nil)
+    (nil))
+(insn 35 34 36 4 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 36 35 37 4 (set (reg:QI 92 [ D.1531 ])
+        (reg:QI 0 ax)) keyboard.cpp:7 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:SI 93 [ D.1532 ])
+        (zero_extend:SI (reg:QI 92 [ D.1531 ]))) keyboard.cpp:7 -1
+     (nil))
+(insn 38 37 39 4 (parallel [
+            (set (reg:SI 94 [ D.1532 ])
+                (and:SI (reg:SI 93 [ D.1532 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:7 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.1532 ])
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:QI 95 [ D.1533 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 95 [ D.1533 ])
+            (const_int 0 [0]))) keyboard.cpp:7 -1
+     (nil))
+(jump_insn 42 41 43 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) keyboard.cpp:7 -1
+     (nil)
+ -> 53)
+;;  succ:       5 (FALLTHRU)
+;;              6
+
+;; basic block 5, loop depth 1, count 0, freq 0, maybe hot
+;;  prev block 4, next block 6, flags: (NEW, REACHABLE, RTL)
+;;  pred:       4 (FALLTHRU)
+(note 43 42 44 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 5 (set (reg/f:SI 110)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:8 -1
+     (nil))
+(insn 45 44 46 5 (parallel [
+            (set (reg/f:SI 96 [ D.1530 ])
+                (plus:SI (reg/f:SI 110)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 46 45 47 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 47 46 48 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 96 [ D.1530 ])) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 48 47 49 5 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:8 -1
+     (nil)
+    (nil))
+(insn 49 48 51 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:8 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(jump_insn 51 49 52 5 (set (pc)
+        (label_ref 50)) keyboard.cpp:7 -1
+     (nil)
+ -> 50)
+;;  succ:       4 (DFS_BACK)
+
+(barrier 52 51 53)
+;; basic block 6, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 5, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       4
+(code_label 53 52 54 6 2 "" [1 uses])
+(note 54 53 55 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 6 (set (reg/f:SI 111)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:9 -1
+     (nil))
+(insn 56 55 57 6 (parallel [
+            (set (reg/f:SI 97 [ D.1530 ])
+                (plus:SI (reg/f:SI 111)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 57 56 58 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 58 57 59 6 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 174 [0xae])) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 59 58 60 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 97 [ D.1530 ])) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 60 59 61 6 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:9 -1
+     (nil)
+    (nil))
+(insn 61 60 62 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:9 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 62 61 63 6 (set (reg/f:SI 112)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:10 -1
+     (nil))
+(insn 63 62 64 6 (parallel [
+            (set (reg/f:SI 98 [ D.1530 ])
+                (plus:SI (reg/f:SI 112)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 64 63 65 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 65 64 66 6 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 66 65 67 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 98 [ D.1530 ])) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 67 66 68 6 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:10 -1
+     (nil)
+    (nil))
+(insn 68 67 69 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 69 68 70 6 (set (reg/f:SI 113)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:11 -1
+     (nil))
+(insn 70 69 71 6 (parallel [
+            (set (reg/f:SI 99 [ D.1530 ])
+                (plus:SI (reg/f:SI 113)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 71 70 72 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 72 71 73 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 99 [ D.1530 ])) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 73 72 74 6 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:11 -1
+     (nil)
+    (nil))
+(insn 74 73 75 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 75 74 76 6 (set (reg:QI 100 [ D.1531 ])
+        (reg:QI 0 ax)) keyboard.cpp:11 -1
+     (nil))
+(insn 76 75 77 6 (parallel [
+            (set (reg:QI 101 [ D.1531 ])
+                (ior:QI (reg:QI 100 [ D.1531 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (nil))
+(insn 77 76 78 6 (parallel [
+            (set (reg:QI 114)
+                (and:QI (reg:QI 101 [ D.1531 ])
+                    (const_int -17 [0xffffffffffffffef])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:11 -1
+     (nil))
+(insn 78 77 79 6 (set (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 status+0 S1 A8])
+        (reg:QI 114)) keyboard.cpp:11 -1
+     (nil))
+(insn 79 78 80 6 (set (reg/f:SI 115)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:12 -1
+     (nil))
+(insn 80 79 81 6 (parallel [
+            (set (reg/f:SI 102 [ D.1530 ])
+                (plus:SI (reg/f:SI 115)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 81 80 82 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 82 81 83 6 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 96 [0x60])) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 83 82 84 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 102 [ D.1530 ])) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 84 83 85 6 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:12 -1
+     (nil)
+    (nil))
+(insn 85 84 86 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:12 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 86 85 87 6 (set (reg:SI 103 [ D.1532 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 status+0 S1 A8]))) keyboard.cpp:13 -1
+     (nil))
+(insn 87 86 88 6 (set (reg/f:SI 116)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:13 -1
+     (nil))
+(insn 88 87 89 6 (parallel [
+            (set (reg/f:SI 104 [ D.1530 ])
+                (plus:SI (reg/f:SI 116)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 89 88 90 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 90 89 91 6 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 103 [ D.1532 ])) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 91 90 92 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 104 [ D.1530 ])) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 92 91 93 6 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:13 -1
+     (nil)
+    (nil))
+(insn 93 92 94 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:13 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 94 93 95 6 (set (reg/f:SI 117)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:14 -1
+     (nil))
+(insn 95 94 96 6 (parallel [
+            (set (reg/f:SI 105 [ D.1530 ])
+                (plus:SI (reg/f:SI 117)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 96 95 97 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 97 96 98 6 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 244 [0xf4])) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 98 97 99 6 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 105 [ D.1530 ])) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 99 98 100 6 (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit5WriteEh") [flags 0x41]  <function_decl 0x7efe7509d288 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:14 -1
+     (nil)
+    (nil))
+(insn 100 99 103 6 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:14 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 103 100 0 6 (const_int 0 [0]) keyboard.cpp:15 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function KeyboardDriver::~KeyboardDriver() (_ZN14KeyboardDriverD2Ev, funcdef_no=11, decl_uid=1409, cgraph_uid=11, symbol_order=11)
+
+KeyboardDriver::~KeyboardDriver() (struct KeyboardDriver * const this)
+{
+  struct InterruptHandler * D.1511;
+  struct Port8Bit * D.1510;
+  struct Port8Bit * D.1509;
+  int (*__vtbl_ptr_type) () * D.1508;
+  int (*__vtbl_ptr_type) () * _1;
+  struct Port8Bit * _5;
+  struct Port8Bit * _7;
+  struct InterruptHandler * _9;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _1 = &_ZTV14KeyboardDriver + 8;
+  this_3(D)->D.1412._vptr.InterruptHandler = _1;
+  _5 = &this_3(D)->commandPort;
+  Port8Bit::~Port8Bit (_5);
+  _7 = &this_3(D)->dataPort;
+  Port8Bit::~Port8Bit (_7);
+  _9 = &this_3(D)->D.1412;
+  InterruptHandler::~InterruptHandler (_9);
+  MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+  return;
+;;    succ:       EXIT
+
+}
+
+
+
+Partition map 
+
+Partition 1 (_1 - 1 )
+Partition 3 (this_3(D) - 3 )
+Partition 5 (_5 - 5 )
+Partition 7 (_7 - 7 )
+Partition 9 (_9 - 9 )
+
+
+Partition map 
+
+Partition 0 (this_3(D) - 3 )
+
+
+Conflict graph:
+
+After sorting:
+Coalesce List:
+
+Partition map 
+
+Partition 0 (this_3(D) - 3 )
+
+After Coalescing:
+
+Partition map 
+
+Partition 0 (_1 - 1 )
+Partition 1 (this_3(D) - 3 )
+Partition 2 (_5 - 5 )
+Partition 3 (_7 - 7 )
+Partition 4 (_9 - 9 )
+
+KeyboardDriver::~KeyboardDriver() (struct KeyboardDriver * const this)
+{
+  struct InterruptHandler * D.1511;
+  struct Port8Bit * D.1510;
+  struct Port8Bit * D.1509;
+  int (*__vtbl_ptr_type) () * D.1508;
+  int (*__vtbl_ptr_type) () * _1;
+  struct Port8Bit * _5;
+  struct Port8Bit * _7;
+  struct InterruptHandler * _9;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _1 = &_ZTV14KeyboardDriver + 8;
+  this_3(D)->D.1412._vptr.InterruptHandler = _1;
+  _5 = &this_3(D)->commandPort;
+  Port8Bit::~Port8Bit (_5);
+  _7 = &this_3(D)->dataPort;
+  Port8Bit::~Port8Bit (_7);
+  _9 = &this_3(D)->D.1412;
+  InterruptHandler::~InterruptHandler (_9);
+  MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+  return;
+;;    succ:       EXIT
+
+}
+
+
+
+;; Generating RTL for gimple basic block 2
+
+;; _1 = &_ZTV14KeyboardDriver + 8;
+
+(insn 5 4 0 (set (reg/f:SI 87 [ D.1534 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV14KeyboardDriver") [flags 0x2]  <var_decl 0x7efe750bf090 _ZTV14KeyboardDriver>)
+                (const_int 8 [0x8])))) keyboard.cpp:16 -1
+     (nil))
+
+;; this_3(D)->D.1412._vptr.InterruptHandler = _1;
+
+(insn 6 5 7 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+
+(insn 7 6 0 (set (mem/f/j:SI (reg/f:SI 91) [0 this_3(D)->D.1412._vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 87 [ D.1534 ])) keyboard.cpp:16 -1
+     (nil))
+
+;; _5 = &this_3(D)->commandPort;
+
+(insn 8 7 9 (set (reg/f:SI 92)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+
+(insn 9 8 0 (parallel [
+            (set (reg/f:SI 88 [ D.1535 ])
+                (plus:SI (reg/f:SI 92)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+
+;; Port8Bit::~Port8Bit (_5);
+
+(insn 10 9 11 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 11 10 12 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1535 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 12 11 13 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitD1Ev") [flags 0x41]  <function_decl 0x7efe7509d6c0 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+
+(insn 13 12 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _7 = &this_3(D)->dataPort;
+
+(insn 14 13 15 (set (reg/f:SI 93)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+
+(insn 15 14 0 (parallel [
+            (set (reg/f:SI 89 [ D.1535 ])
+                (plus:SI (reg/f:SI 93)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; Port8Bit::~Port8Bit (_7);
+
+(insn 16 15 17 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 17 16 18 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 89 [ D.1535 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 18 17 19 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitD1Ev") [flags 0x41]  <function_decl 0x7efe7509d6c0 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+
+(insn 19 18 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _9 = &this_3(D)->D.1412;
+
+(insn 20 19 0 (set (reg/f:SI 90 [ D.1536 ])
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+
+;; InterruptHandler::~InterruptHandler (_9);
+
+(insn 21 20 22 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 22 21 23 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1536 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 23 22 24 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptHandlerD2Ev") [flags 0x41]  <function_decl 0x7efe750acca8 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+
+(insn 24 23 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; MEM[(struct  &)this_3(D)] ={v} {CLOBBER};
+
+(nil)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1534 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV14KeyboardDriver") [flags 0x2]  <var_decl 0x7efe750bf090 _ZTV14KeyboardDriver>)
+                (const_int 8 [0x8])))) keyboard.cpp:16 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 91) [0 this_3(D)->D.1412._vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 87 [ D.1534 ])) keyboard.cpp:16 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 92)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:SI 88 [ D.1535 ])
+                (plus:SI (reg/f:SI 92)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 10 9 11 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 11 10 12 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1535 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitD1Ev") [flags 0x41]  <function_decl 0x7efe7509d6c0 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 13 15 2 (set (reg/f:SI 93)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg/f:SI 89 [ D.1535 ])
+                (plus:SI (reg/f:SI 93)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 16 15 17 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 17 16 18 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 89 [ D.1535 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:SI ("_ZN8Port8BitD1Ev") [flags 0x41]  <function_decl 0x7efe7509d6c0 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 20 19 21 2 (set (reg/f:SI 90 [ D.1536 ])
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:16 -1
+     (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 22 21 23 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1536 ])) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 23 22 24 2 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptHandlerD2Ev") [flags 0x41]  <function_decl 0x7efe750acca8 __base_dtor >) [0 __base_dtor  S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:16 -1
+     (nil)
+    (nil))
+(insn 24 23 27 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:16 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 27 24 0 2 (const_int 0 [0]) keyboard.cpp:18 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+
+
+;; Function virtual uint32_t KeyboardDriver::HandleInterrupt(uint32_t) (_ZN14KeyboardDriver15HandleInterruptEj, funcdef_no=13, decl_uid=1398, cgraph_uid=13, symbol_order=13)
+
+virtual uint32_t KeyboardDriver::HandleInterrupt(uint32_t) (struct KeyboardDriver * const this, uint32_t esp)
+{
+  char * hex;
+  char * foo;
+  uint8_t key;
+  uint32_t D.1523;
+  char D.1522;
+  char * D.1521;
+  sizetype D.1520;
+  sizetype D.1519;
+  char * D.1518;
+  char D.1517;
+  char * D.1516;
+  sizetype D.1515;
+  unsigned char D.1514;
+  char * D.1513;
+  struct Port8Bit * D.1512;
+  struct Port8Bit * _2;
+  char * _8;
+  unsigned char _9;
+  sizetype _10;
+  char * _11;
+  char _12;
+  char * _14;
+  sizetype _15;
+  sizetype _16;
+  char * _17;
+  char _18;
+  uint32_t _22;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _2 = &this_1(D)->dataPort;
+  key_5 = Port8Bit::Read (_2);
+  foo_6 = "Keyboard 0x00";
+  hex_7 = "0123456789ABCDEF";
+  _8 = foo_6 + 11;
+  _9 = key_5 >> 4;
+  _10 = (sizetype) _9;
+  _11 = hex_7 + _10;
+  _12 = *_11;
+  *_8 = _12;
+  _14 = foo_6 + 12;
+  _15 = (sizetype) key_5;
+  _16 = _15 & 15;
+  _17 = hex_7 + _16;
+  _18 = *_17;
+  *_14 = _18;
+  printf (foo_6);
+  _22 = esp_21(D);
+;;    succ:       3
+
+;;   basic block 3, loop depth 0
+;;    pred:       2
+<L0>:
+  return _22;
+;;    succ:       EXIT
+
+}
+
+
+
+Partition map 
+
+Partition 1 (this_1(D) - 1 )
+Partition 2 (_2 - 2 )
+Partition 5 (key_5 - 5 )
+Partition 6 (foo_6 - 6 )
+Partition 7 (hex_7 - 7 )
+Partition 8 (_8 - 8 )
+Partition 9 (_9 - 9 )
+Partition 10 (_10 - 10 )
+Partition 11 (_11 - 11 )
+Partition 12 (_12 - 12 )
+Partition 14 (_14 - 14 )
+Partition 15 (_15 - 15 )
+Partition 16 (_16 - 16 )
+Partition 17 (_17 - 17 )
+Partition 18 (_18 - 18 )
+Partition 21 (esp_21(D) - 21 )
+Partition 22 (_22 - 22 )
+
+
+Partition map 
+
+Partition 0 (this_1(D) - 1 )
+Partition 1 (esp_21(D) - 21 )
+
+
+Conflict graph:
+
+After sorting:
+Coalesce List:
+
+Partition map 
+
+Partition 0 (this_1(D) - 1 )
+Partition 1 (esp_21(D) - 21 )
+
+After Coalescing:
+
+Partition map 
+
+Partition 0 (this_1(D) - 1 )
+Partition 1 (_2 - 2 )
+Partition 2 (key_5 - 5 )
+Partition 3 (foo_6 - 6 )
+Partition 4 (hex_7 - 7 )
+Partition 5 (_8 - 8 )
+Partition 6 (_9 - 9 )
+Partition 7 (_10 - 10 )
+Partition 8 (_11 - 11 )
+Partition 9 (_12 - 12 )
+Partition 10 (_14 - 14 )
+Partition 11 (_15 - 15 )
+Partition 12 (_16 - 16 )
+Partition 13 (_17 - 17 )
+Partition 14 (_18 - 18 )
+Partition 15 (esp_21(D) - 21 )
+Partition 16 (_22 - 22 )
+
+virtual uint32_t KeyboardDriver::HandleInterrupt(uint32_t) (struct KeyboardDriver * const this, uint32_t esp)
+{
+  char * hex;
+  char * foo;
+  uint8_t key;
+  uint32_t D.1523;
+  char D.1522;
+  char * D.1521;
+  sizetype D.1520;
+  sizetype D.1519;
+  char * D.1518;
+  char D.1517;
+  char * D.1516;
+  sizetype D.1515;
+  unsigned char D.1514;
+  char * D.1513;
+  struct Port8Bit * D.1512;
+  struct Port8Bit * _2;
+  char * _8;
+  unsigned char _9;
+  sizetype _10;
+  char * _11;
+  char _12;
+  char * _14;
+  sizetype _15;
+  sizetype _16;
+  char * _17;
+  char _18;
+  uint32_t _22;
+
+;;   basic block 2, loop depth 0
+;;    pred:       ENTRY
+  _2 = &this_1(D)->dataPort;
+  key_5 = Port8Bit::Read (_2);
+  foo_6 = "Keyboard 0x00";
+  hex_7 = "0123456789ABCDEF";
+  _8 = foo_6 + 11;
+  _9 = key_5 >> 4;
+  _10 = (sizetype) _9;
+  _11 = hex_7 + _10;
+  _12 = *_11;
+  *_8 = _12;
+  _14 = foo_6 + 12;
+  _15 = (sizetype) key_5;
+  _16 = _15 & 15;
+  _17 = hex_7 + _16;
+  _18 = *_17;
+  *_14 = _18;
+  printf (foo_6);
+  _22 = esp_21(D);
+;;    succ:       3
+
+;;   basic block 3, loop depth 0
+;;    pred:       2
+<L0>:
+  return _22;
+;;    succ:       EXIT
+
+}
+
+
+
+;; Generating RTL for gimple basic block 2
+
+;; _2 = &this_1(D)->dataPort;
+
+(insn 5 4 6 (set (reg/f:SI 100)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:20 -1
+     (nil))
+
+(insn 6 5 0 (parallel [
+            (set (reg/f:SI 87 [ D.1537 ])
+                (plus:SI (reg/f:SI 100)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; key_5 = Port8Bit::Read (_2);
+
+(insn 7 6 8 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 8 7 9 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 87 [ D.1537 ])) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 9 8 10 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:20 -1
+     (nil)
+    (nil))
+
+(insn 10 9 11 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+(insn 11 10 12 (set (reg:QI 101)
+        (reg:QI 0 ax)) keyboard.cpp:20 -1
+     (nil))
+
+(insn 12 11 0 (set (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])
+        (reg:QI 101)) keyboard.cpp:20 -1
+     (nil))
+
+;; foo_6 = "Keyboard 0x00";
+
+(insn 13 12 0 (set (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0x7efe750dab40 *.LC0>)) keyboard.cpp:21 -1
+     (nil))
+
+;; hex_7 = "0123456789ABCDEF";
+
+(insn 14 13 0 (set (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 0x7efe750dabd0 *.LC1>)) keyboard.cpp:22 -1
+     (nil))
+
+;; _8 = foo_6 + 11;
+
+(insn 15 14 16 (set (reg/f:SI 102)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:23 -1
+     (nil))
+
+(insn 16 15 0 (parallel [
+            (set (reg/f:SI 88 [ D.1538 ])
+                (plus:SI (reg/f:SI 102)
+                    (const_int 11 [0xb])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+            (const_int 11 [0xb]))
+        (nil)))
+
+;; _9 = key_5 >> 4;
+
+(insn 17 16 18 (set (reg:QI 103)
+        (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])) keyboard.cpp:23 -1
+     (nil))
+
+(insn 18 17 0 (parallel [
+            (set (reg:QI 89 [ D.1539 ])
+                (lshiftrt:QI (reg:QI 103)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (lshiftrt:QI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])
+            (const_int 4 [0x4]))
+        (nil)))
+
+;; _10 = (sizetype) _9;
+
+(insn 19 18 0 (set (reg:SI 90 [ D.1540 ])
+        (zero_extend:SI (reg:QI 89 [ D.1539 ]))) keyboard.cpp:23 -1
+     (nil))
+
+;; _11 = hex_7 + _10;
+
+(insn 20 19 21 (set (reg/f:SI 104)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])) keyboard.cpp:23 -1
+     (nil))
+
+(insn 21 20 0 (parallel [
+            (set (reg/f:SI 91 [ D.1538 ])
+                (plus:SI (reg:SI 90 [ D.1540 ])
+                    (reg/f:SI 104)))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+            (reg:SI 90 [ D.1540 ]))
+        (nil)))
+
+;; _12 = *_11;
+
+(insn 22 21 0 (set (reg:QI 92 [ D.1541 ])
+        (mem:QI (reg/f:SI 91 [ D.1538 ]) [0 *_11+0 S1 A8])) keyboard.cpp:23 -1
+     (nil))
+
+;; *_8 = _12;
+
+(insn 23 22 0 (set (mem:QI (reg/f:SI 88 [ D.1538 ]) [0 *_8+0 S1 A8])
+        (reg:QI 92 [ D.1541 ])) keyboard.cpp:23 -1
+     (nil))
+
+;; _14 = foo_6 + 12;
+
+(insn 24 23 25 (set (reg/f:SI 105)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:24 -1
+     (nil))
+
+(insn 25 24 0 (parallel [
+            (set (reg/f:SI 93 [ D.1538 ])
+                (plus:SI (reg/f:SI 105)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+
+;; _15 = (sizetype) key_5;
+
+(insn 26 25 0 (set (reg:SI 94 [ D.1540 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8]))) keyboard.cpp:24 -1
+     (nil))
+
+;; _16 = _15 & 15;
+
+(insn 27 26 0 (parallel [
+            (set (reg:SI 95 [ D.1540 ])
+                (and:SI (reg:SI 94 [ D.1540 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (nil))
+
+;; _17 = hex_7 + _16;
+
+(insn 28 27 29 (set (reg/f:SI 106)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])) keyboard.cpp:24 -1
+     (nil))
+
+(insn 29 28 0 (parallel [
+            (set (reg/f:SI 96 [ D.1538 ])
+                (plus:SI (reg:SI 95 [ D.1540 ])
+                    (reg/f:SI 106)))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+            (reg:SI 95 [ D.1540 ]))
+        (nil)))
+
+;; _18 = *_17;
+
+(insn 30 29 0 (set (reg:QI 97 [ D.1541 ])
+        (mem:QI (reg/f:SI 96 [ D.1538 ]) [0 *_17+0 S1 A8])) keyboard.cpp:24 -1
+     (nil))
+
+;; *_14 = _18;
+
+(insn 31 30 0 (set (mem:QI (reg/f:SI 93 [ D.1538 ]) [0 *_14+0 S1 A8])
+        (reg:QI 97 [ D.1541 ])) keyboard.cpp:24 -1
+     (nil))
+
+;; printf (foo_6);
+
+(insn 32 31 33 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+
+(insn 33 32 34 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+
+(call_insn 34 33 35 (call (mem:QI (symbol_ref:SI ("_Z6printfPc") [flags 0x41]  <function_decl 0x7efe750c10d8 printf>) [0 printf S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:25 -1
+     (nil)
+    (nil))
+
+(insn 35 34 0 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+
+;; _22 = esp_21(D);
+
+(insn 36 35 0 (set (reg:SI 98 [ D.1542 ])
+        (mem/c:SI (plus:SI (reg/f:SI 81 virtual-incoming-args)
+                (const_int 4 [0x4])) [0 esp+0 S4 A32])) keyboard.cpp:26 -1
+     (nil))
+
+;; Generating RTL for gimple basic block 3
+
+;; <L0>:
+
+(code_label 37 36 38 6 "" [0 uses])
+
+(note 38 37 0 NOTE_INSN_BASIC_BLOCK)
+
+;; return _22;
+
+(insn 39 38 40 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 98 [ D.1542 ])) keyboard.cpp:26 -1
+     (nil))
+
+(jump_insn 40 39 41 (set (pc)
+        (label_ref 0)) keyboard.cpp:26 -1
+     (nil))
+
+(barrier 41 40 0)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 40.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL)
+;;  pred:       ENTRY (FALLTHRU)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 100)
+        (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])) keyboard.cpp:20 -1
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (set (reg/f:SI 87 [ D.1537 ])
+                (plus:SI (reg/f:SI 100)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 81 virtual-incoming-args) [0 this+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 7 6 8 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 8 7 9 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 87 [ D.1537 ])) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 9 8 10 2 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN8Port8Bit4ReadEv") [flags 0x41]  <function_decl 0x7efe7509d1b0 Read>) [0 Read S1 A8])
+            (const_int 16 [0x10]))) keyboard.cpp:20 -1
+     (nil)
+    (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:20 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 11 10 12 2 (set (reg:QI 101)
+        (reg:QI 0 ax)) keyboard.cpp:20 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])
+        (reg:QI 101)) keyboard.cpp:20 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0x7efe750dab40 *.LC0>)) keyboard.cpp:21 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 0x7efe750dabd0 *.LC1>)) keyboard.cpp:22 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 102)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:23 -1
+     (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg/f:SI 88 [ D.1538 ])
+                (plus:SI (reg/f:SI 102)
+                    (const_int 11 [0xb])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+            (const_int 11 [0xb]))
+        (nil)))
+(insn 17 16 18 2 (set (reg:QI 103)
+        (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])) keyboard.cpp:23 -1
+     (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg:QI 89 [ D.1539 ])
+                (lshiftrt:QI (reg:QI 103)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (lshiftrt:QI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 90 [ D.1540 ])
+        (zero_extend:SI (reg:QI 89 [ D.1539 ]))) keyboard.cpp:23 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:SI 104)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])) keyboard.cpp:23 -1
+     (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg/f:SI 91 [ D.1538 ])
+                (plus:SI (reg:SI 90 [ D.1540 ])
+                    (reg/f:SI 104)))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:23 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+            (reg:SI 90 [ D.1540 ]))
+        (nil)))
+(insn 22 21 23 2 (set (reg:QI 92 [ D.1541 ])
+        (mem:QI (reg/f:SI 91 [ D.1538 ]) [0 *_11+0 S1 A8])) keyboard.cpp:23 -1
+     (nil))
+(insn 23 22 24 2 (set (mem:QI (reg/f:SI 88 [ D.1538 ]) [0 *_8+0 S1 A8])
+        (reg:QI 92 [ D.1541 ])) keyboard.cpp:23 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 105)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:24 -1
+     (nil))
+(insn 25 24 26 2 (parallel [
+            (set (reg/f:SI 93 [ D.1538 ])
+                (plus:SI (reg/f:SI 105)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 26 25 27 2 (set (reg:SI 94 [ D.1540 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 key+0 S1 A8]))) keyboard.cpp:24 -1
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg:SI 95 [ D.1540 ])
+                (and:SI (reg:SI 94 [ D.1540 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (nil))
+(insn 28 27 29 2 (set (reg/f:SI 106)
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])) keyboard.cpp:24 -1
+     (nil))
+(insn 29 28 30 2 (parallel [
+            (set (reg/f:SI 96 [ D.1538 ])
+                (plus:SI (reg:SI 95 [ D.1540 ])
+                    (reg/f:SI 106)))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:24 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 hex+0 S4 A32])
+            (reg:SI 95 [ D.1540 ]))
+        (nil)))
+(insn 30 29 31 2 (set (reg:QI 97 [ D.1541 ])
+        (mem:QI (reg/f:SI 96 [ D.1538 ]) [0 *_17+0 S1 A8])) keyboard.cpp:24 -1
+     (nil))
+(insn 31 30 32 2 (set (mem:QI (reg/f:SI 93 [ D.1538 ]) [0 *_14+0 S1 A8])
+        (reg:QI 97 [ D.1541 ])) keyboard.cpp:24 -1
+     (nil))
+(insn 32 31 33 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 33 32 34 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 foo+0 S4 A32])) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 34 33 35 2 (call (mem:QI (symbol_ref:SI ("_Z6printfPc") [flags 0x41]  <function_decl 0x7efe750c10d8 printf>) [0 printf S1 A8])
+        (const_int 16 [0x10])) keyboard.cpp:25 -1
+     (nil)
+    (nil))
+(insn 35 34 36 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) keyboard.cpp:25 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 36 35 39 2 (set (reg:SI 98 [ D.1542 ])
+        (mem/c:SI (plus:SI (reg/f:SI 81 virtual-incoming-args)
+                (const_int 4 [0x4])) [0 esp+0 S4 A32])) keyboard.cpp:26 -1
+     (nil))
+(insn 39 36 43 2 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 98 [ D.1542 ])) keyboard.cpp:26 -1
+     (nil))
+(insn 43 39 44 2 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) keyboard.cpp:27 -1
+     (nil))
+(insn 44 43 0 2 (use (reg/i:SI 0 ax)) keyboard.cpp:27 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+

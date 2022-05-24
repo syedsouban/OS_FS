@@ -1,0 +1,3665 @@
+
+;; Function InterruptHandler::InterruptHandler(uint8_t, InterruptManager*) (_ZN16InterruptHandlerC2EhP16InterruptManager, funcdef_no=8, decl_uid=1310, cgraph_uid=8, symbol_order=8)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 3 n_edges 2 count 3 (    1)
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r96: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a2 (r96,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r95: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r95,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r94: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a4 (r94,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r93: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a3 (r93,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r92: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a6 (r92,l0) best Q_REGS, allocno Q_REGS
+    r91: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a5 (r91,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r90: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a7 (r90,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r89: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a9 (r89,l0) best Q_REGS, allocno Q_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a8 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r95,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a1(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a2(r96,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a3(r93,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a4(r94,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a5(r91,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a6(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:8
+  a7(r90,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a8(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+  a9(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+
+   Insn 22(l0): point = 0
+   Insn 19(l0): point = 2
+   Insn 18(l0): point = 4
+   Insn 17(l0): point = 6
+   Insn 16(l0): point = 8
+   Insn 15(l0): point = 10
+   Insn 14(l0): point = 12
+   Insn 13(l0): point = 14
+   Insn 12(l0): point = 16
+   Insn 11(l0): point = 18
+   Insn 10(l0): point = 20
+   Insn 9(l0): point = 22
+   Insn 8(l0): point = 24
+   Insn 7(l0): point = 26
+   Insn 3(l0): point = 28
+   Insn 2(l0): point = 30
+ a0(r95): [3..6]
+ a1(r88): [3..8]
+ a2(r96): [3..4]
+ a3(r93): [11..14]
+ a4(r94): [11..12]
+ a5(r91): [17..20]
+ a6(r92): [17..18]
+ a7(r90): [23..24]
+ a8(r87): [23..26]
+ a9(r89): [29..30]
+Compressing live ranges: from 33 to 10 - 30%
+Ranges after the compression:
+ a0(r95): [0..1]
+ a1(r88): [0..1]
+ a2(r96): [0..1]
+ a3(r93): [2..3]
+ a4(r94): [2..3]
+ a5(r91): [4..5]
+ a6(r92): [4..5]
+ a7(r90): [6..7]
+ a8(r87): [6..7]
+ a9(r89): [8..9]
+  regions=1, blocks=3, points=10
+    allocnos=10 (big 0), copies=0, conflicts=0, ranges=10
+Disposition:
+    8:r87  l0     1    1:r88  l0     1    9:r89  l0     0    7:r90  l0     0
+    5:r91  l0     0    6:r92  l0     1    3:r93  l0     0    4:r94  l0     1
+    0:r95  l0     0    2:r96  l0     2
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+InterruptHandler::InterruptHandler(uint8_t, InterruptManager*)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 6[bp]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r6={1d,2u} r7={1d,2u} r16={1d,8u} r20={1d,5u} r87={1d,1u} r88={1d,1u} r89={1d,1u} r90={1d,1u} r91={1d,1u} r92={1d,1u} r93={1d,1u} r94={1d,1u} r95={1d,1u} r96={1d,1u} 
+;;    total ref usage 44{17d,27u,0e} in 16{16 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 87 88 89 90 91 92 93 94 95 96
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 89)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 interruptNumber+0 S4 A32])) interrupts.cpp:5 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 interruptNumber+0 S1 A32])
+        (subreg:QI (reg:SI 89) 0)) interrupts.cpp:5 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 89)
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:SI 87 [ D.1627 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV16InterruptHandler") [flags 0x2]  <var_decl 0x7f920469a900 _ZTV16InterruptHandler>)
+                (const_int 8 [0x8])))) interrupts.cpp:5 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 90)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:5 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (mem/f/j:SI (reg/f:SI 90) [0 this_3(D)->_vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 87 [ D.1627 ])) interrupts.cpp:5 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 90)
+        (expr_list:REG_DEAD (reg/f:SI 87 [ D.1627 ])
+            (nil))))
+(insn 10 9 11 2 (set (reg/f:SI 91)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:7 90 {*movsi_internal}
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 92)
+        (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 interruptNumber+0 S1 A32])) interrupts.cpp:7 93 {*movqi_internal}
+     (nil))
+(insn 12 11 13 2 (set (mem/j:QI (plus:SI (reg/f:SI 91)
+                (const_int 4 [0x4])) [0 this_3(D)->interruptNumber+0 S1 A32])
+        (reg:QI 92)) interrupts.cpp:7 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:QI 92)
+        (expr_list:REG_DEAD (reg/f:SI 91)
+            (nil))))
+(insn 13 12 14 2 (set (reg/f:SI 93)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:8 90 {*movsi_internal}
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 94)
+        (mem/f/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 interruptManager+0 S4 A32])) interrupts.cpp:8 90 {*movsi_internal}
+     (nil))
+(insn 15 14 16 2 (set (mem/f/j:SI (plus:SI (reg/f:SI 93)
+                (const_int 8 [0x8])) [0 this_3(D)->interruptManager+0 S4 A32])
+        (reg/f:SI 94)) interrupts.cpp:8 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 94)
+        (expr_list:REG_DEAD (reg/f:SI 93)
+            (nil))))
+(insn 16 15 17 2 (set (reg:SI 88 [ D.1628 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:9 138 {*zero_extendqisi2}
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 95)
+        (mem/f/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 interruptManager+0 S4 A32])) interrupts.cpp:9 90 {*movsi_internal}
+     (nil))
+(insn 18 17 19 2 (set (reg/f:SI 96)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:9 90 {*movsi_internal}
+     (nil))
+(insn 19 18 22 2 (set (mem/f/j:SI (plus:SI (mult:SI (reg:SI 88 [ D.1628 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 95)) [0 interruptManager_7(D)->handlers S4 A32])
+        (reg/f:SI 96)) interrupts.cpp:9 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 96)
+        (expr_list:REG_DEAD (reg/f:SI 95)
+            (expr_list:REG_DEAD (reg:SI 88 [ D.1628 ])
+                (nil)))))
+(insn 22 19 0 2 (const_int 0 [0]) interrupts.cpp:10 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function virtual uint32_t InterruptHandler::HandleInterrupt(uint32_t) (_ZN16InterruptHandler15HandleInterruptEj, funcdef_no=10, decl_uid=1304, cgraph_uid=10, symbol_order=10)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 3 n_edges 2 count 3 (    1)
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r88: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a0 (r88,l0) best AREG, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:4
+  a1(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+
+   Insn 13(l0): point = 0
+   Insn 12(l0): point = 2
+   Insn 8(l0): point = 4
+   Insn 5(l0): point = 6
+ a0(r88): [3..4]
+ a1(r87): [5..6]
+Compressing live ranges: from 9 to 4 - 44%
+Ranges after the compression:
+ a0(r88): [0..1]
+ a1(r87): [2..3]
+  regions=1, blocks=3, points=4
+    allocnos=2 (big 0), copies=0, conflicts=0, ranges=2
+Disposition:
+    1:r87  l0     0    0:r88  l0     0
++++Costs: overall -1, reg -1, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+virtual uint32_t InterruptHandler::HandleInterrupt(uint32_t)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 0 [ax] 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 0[ax] 6[bp]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r6={1d,2u} r7={1d,2u} r16={1d,2u} r20={1d,2u} r87={1d,1u} r88={1d,1u} 
+;;    total ref usage 22{10d,12u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 87 88
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 8 2 (set (reg:SI 87 [ D.1629 ])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 esp+0 S4 A32])) interrupts.cpp:13 90 {*movsi_internal}
+     (nil))
+(insn 8 5 12 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.1629 ])) interrupts.cpp:13 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 87 [ D.1629 ])
+        (nil)))
+(insn 12 8 13 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) interrupts.cpp:14 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 88 [ <retval> ])
+        (nil)))
+(insn 13 12 0 2 (use (reg/i:SI 0 ax)) interrupts.cpp:14 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 0 [ax] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function InterruptHandler::~InterruptHandler() (_ZN16InterruptHandlerD2Ev, funcdef_no=12, decl_uid=1317, cgraph_uid=12, symbol_order=12)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 6 n_edges 6 count 6 (    1)
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r99: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a3 (r99,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r98: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a4 (r98,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r97: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a9 (r97,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r96: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a10 (r96,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r95: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a11 (r95,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r94: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r94,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r93: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a2 (r93,l0) best Q_REGS, allocno Q_REGS
+    r92: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r92,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r91: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a5 (r91,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r90: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a7 (r90,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r89: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a8 (r89,l0) best Q_REGS, allocno Q_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a6 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a12 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a1(r94,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a2(r93,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:7
+  a3(r99,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a4(r98,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a5(r91,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a6(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a7(r90,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a8(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:7
+  a9(r97,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a10(r96,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a11(r95,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a12(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+
+   Insn 31(l0): point = 1
+   Insn 22(l0): point = 4
+   Insn 21(l0): point = 6
+   Insn 20(l0): point = 8
+   Insn 19(l0): point = 10
+   Insn 18(l0): point = 12
+   Insn 17(l0): point = 14
+   Insn 15(l0): point = 17
+   Insn 14(l0): point = 19
+   Insn 13(l0): point = 21
+   Insn 12(l0): point = 23
+   Insn 11(l0): point = 25
+   Insn 10(l0): point = 27
+   Insn 9(l0): point = 29
+   Insn 8(l0): point = 31
+   Insn 7(l0): point = 33
+   Insn 6(l0): point = 35
+   Insn 5(l0): point = 37
+ a0(r92): [5..12]
+ a1(r94): [5..6]
+ a2(r93): [7..8]
+ a3(r99): [9..10]
+ a4(r98): [13..14]
+ a5(r91): [20..21]
+ a6(r88): [22..29]
+ a7(r90): [22..23]
+ a8(r89): [24..25]
+ a9(r97): [26..27]
+ a10(r96): [30..31]
+ a11(r95): [34..35]
+ a12(r87): [34..37]
+Compressing live ranges: from 40 to 20 - 50%
+Ranges after the compression:
+ a0(r92): [0..5]
+ a1(r94): [0..1]
+ a2(r93): [2..3]
+ a3(r99): [4..5]
+ a4(r98): [6..7]
+ a5(r91): [8..9]
+ a6(r88): [10..15]
+ a7(r90): [10..11]
+ a8(r89): [12..13]
+ a9(r97): [14..15]
+ a10(r96): [16..17]
+ a11(r95): [18..19]
+ a12(r87): [18..19]
+  regions=1, blocks=6, points=20
+    allocnos=13 (big 0), copies=0, conflicts=0, ranges=13
+Disposition:
+   12:r87  l0     1    6:r88  l0     0    8:r89  l0     1    7:r90  l0     1
+    5:r91  l0     0    0:r92  l0     0    2:r93  l0     1    1:r94  l0     1
+   11:r95  l0     0   10:r96  l0     0    9:r97  l0     1    4:r98  l0     0
+    3:r99  l0     1
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+InterruptHandler::~InterruptHandler()
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 6[bp] 17[flags]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r6={1d,5u} r7={1d,5u} r16={1d,10u} r17={1d,1u} r20={1d,5u} r87={1d,1u} r88={1d,1u} r89={1d,1u} r90={1d,1u} r91={1d,1u} r92={1d,1u} r93={1d,1u} r94={1d,1u} r95={1d,1u} r96={1d,1u} r97={1d,1u} r98={1d,1u} r99={1d,1u} 
+;;    total ref usage 60{21d,39u,0e} in 18{18 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 87 88 89 90 91 95 96 97
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1630 ])
+        (const:SI (plus:SI (symbol_ref/i:SI ("_ZTV16InterruptHandler") [flags 0x2]  <var_decl 0x7f920469a900 _ZTV16InterruptHandler>)
+                (const_int 8 [0x8])))) interrupts.cpp:16 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 95)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:16 90 {*movsi_internal}
+     (nil))
+(insn 7 6 8 2 (set (mem/f/j:SI (reg/f:SI 95) [0 this_4(D)->_vptr.InterruptHandler+0 S4 A32])
+        (reg/f:SI 87 [ D.1630 ])) interrupts.cpp:16 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 95)
+        (expr_list:REG_DEAD (reg/f:SI 87 [ D.1630 ])
+            (nil))))
+(insn 8 7 9 2 (set (reg/f:SI 96)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:17 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 88 [ D.1631 ])
+        (mem/f/j:SI (plus:SI (reg/f:SI 96)
+                (const_int 8 [0x8])) [0 this_4(D)->interruptManager+0 S4 A32])) interrupts.cpp:17 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 96)
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:SI 97)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:17 90 {*movsi_internal}
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 89 [ D.1632 ])
+        (mem/j:QI (plus:SI (reg/f:SI 97)
+                (const_int 4 [0x4])) [0 this_4(D)->interruptNumber+0 S1 A32])) interrupts.cpp:17 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 97)
+        (nil)))
+(insn 12 11 13 2 (set (reg:SI 90 [ D.1633 ])
+        (zero_extend:SI (reg:QI 89 [ D.1632 ]))) interrupts.cpp:17 138 {*zero_extendqisi2}
+     (expr_list:REG_DEAD (reg:QI 89 [ D.1632 ])
+        (nil)))
+(insn 13 12 14 2 (set (reg/f:SI 91 [ D.1634 ])
+        (mem/f/j:SI (plus:SI (mult:SI (reg:SI 90 [ D.1633 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 88 [ D.1631 ])) [0 _6->handlers S4 A32])) interrupts.cpp:17 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 90 [ D.1633 ])
+        (expr_list:REG_DEAD (reg/f:SI 88 [ D.1631 ])
+            (nil))))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:SI 91 [ D.1634 ])
+            (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32]))) interrupts.cpp:17 7 {*cmpsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 91 [ D.1634 ])
+        (nil)))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:SI 30)
+            (pc))) interrupts.cpp:17 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 30)
+;;  succ:       3 (FALLTHRU)
+;;              5
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 5, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 92 93 94 98 99
+(note 16 15 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 3 (set (reg/f:SI 98)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 18 17 19 3 (set (reg/f:SI 92 [ D.1631 ])
+        (mem/f/j:SI (plus:SI (reg/f:SI 98)
+                (const_int 8 [0x8])) [0 this_4(D)->interruptManager+0 S4 A32])) interrupts.cpp:18 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 98)
+        (nil)))
+(insn 19 18 20 3 (set (reg/f:SI 99)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:18 90 {*movsi_internal}
+     (nil))
+(insn 20 19 21 3 (set (reg:QI 93 [ D.1632 ])
+        (mem/j:QI (plus:SI (reg/f:SI 99)
+                (const_int 4 [0x4])) [0 this_4(D)->interruptNumber+0 S1 A32])) interrupts.cpp:18 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 99)
+        (nil)))
+(insn 21 20 22 3 (set (reg:SI 94 [ D.1633 ])
+        (zero_extend:SI (reg:QI 93 [ D.1632 ]))) interrupts.cpp:18 138 {*zero_extendqisi2}
+     (expr_list:REG_DEAD (reg:QI 93 [ D.1632 ])
+        (nil)))
+(insn 22 21 30 3 (set (mem/f/j:SI (plus:SI (mult:SI (reg:SI 94 [ D.1633 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 92 [ D.1631 ])) [0 _10->handlers S4 A32])
+        (const_int 0 [0])) interrupts.cpp:18 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 94 [ D.1633 ])
+        (expr_list:REG_DEAD (reg/f:SI 92 [ D.1631 ])
+            (nil))))
+;;  succ:       5 [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 5, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 4, flags: (NEW, RTL, MODIFIED)
+;;  pred:       2
+;;              3 [100.0%]  (FALLTHRU)
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	
+(code_label 30 22 29 5 6 "" [1 uses])
+(note 29 30 31 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 31 29 25 5 (const_int 0 [0]) interrupts.cpp:19 684 {nop}
+     (nil))
+;;  succ:       4 [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 5, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       5 [100.0%]  (FALLTHRU)
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	
+(code_label 25 31 26 4 4 "" [0 uses])
+(note 26 25 0 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function static void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t, uint16_t, void (*)(), uint8_t, uint8_t) (_ZN16InterruptManager32SetInterruptDescriptorTableEntryEhtPFvvEhh, funcdef_no=14, decl_uid=1345, cgraph_uid=14, symbol_order=16)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 3 n_edges 2 count 3 (    1)
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r107: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a9 (r107,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r106: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a17 (r106,l0) best Q_REGS, allocno Q_REGS
+    r105: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a18 (r105,l0) best Q_REGS, allocno Q_REGS
+    r104: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a19 (r104,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r103: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a20 (r103,l0) best Q_REGS, allocno Q_REGS
+    r102: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r102,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r101: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a2 (r101,l0) best Q_REGS, allocno Q_REGS
+    r100: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a3 (r100,l0) best Q_REGS, allocno Q_REGS
+    r99: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a4 (r99,l0) best Q_REGS, allocno Q_REGS
+    r98: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a5 (r98,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r97: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a6 (r97,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r96: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a7 (r96,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r95: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r95,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r94: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a8 (r94,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r93: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a11 (r93,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r92: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a12 (r92,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r91: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a13 (r91,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r90: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a10 (r90,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r89: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a15 (r89,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a16 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a14 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r102,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a1(r95,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a2(r101,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:5
+  a3(r100,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:5
+  a4(r99,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:5
+  a5(r98,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:6
+  a6(r97,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:6
+  a7(r96,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a8(r94,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a9(r107,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a10(r90,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a11(r93,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+  a12(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:6
+  a13(r91,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a14(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a15(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+  a16(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a17(r106,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+  a18(r105,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+  a19(r104,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a20(r103,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+
+   Insn 38(l0): point = 0
+   Insn 35(l0): point = 2
+   Insn 34(l0): point = 4
+   Insn 33(l0): point = 6
+   Insn 32(l0): point = 8
+   Insn 31(l0): point = 10
+   Insn 30(l0): point = 12
+   Insn 29(l0): point = 14
+   Insn 28(l0): point = 16
+   Insn 27(l0): point = 18
+   Insn 26(l0): point = 20
+   Insn 25(l0): point = 22
+   Insn 24(l0): point = 24
+   Insn 23(l0): point = 26
+   Insn 22(l0): point = 28
+   Insn 21(l0): point = 30
+   Insn 20(l0): point = 32
+   Insn 19(l0): point = 34
+   Insn 18(l0): point = 36
+   Insn 17(l0): point = 38
+   Insn 16(l0): point = 40
+   Insn 15(l0): point = 42
+   Insn 14(l0): point = 44
+   Insn 13(l0): point = 46
+   Insn 9(l0): point = 48
+   Insn 7(l0): point = 50
+   Insn 5(l0): point = 52
+   Insn 3(l0): point = 54
+   Insn 8(l0): point = 56
+   Insn 6(l0): point = 58
+   Insn 4(l0): point = 60
+   Insn 2(l0): point = 62
+ a0(r102): [3..4]
+ a1(r95): [7..20]
+ a2(r101): [7..8]
+ a3(r100): [9..10]
+ a4(r99): [11..12]
+ a5(r98): [13..14]
+ a6(r97): [15..16]
+ a7(r96): [17..18]
+ a8(r94): [23..26]
+ a9(r107): [23..24]
+ a10(r90): [29..36]
+ a11(r93): [29..30]
+ a12(r92): [31..32]
+ a13(r91): [33..34]
+ a14(r87): [39..44]
+ a15(r89): [39..40]
+ a16(r88): [41..42]
+ a17(r106): [49..56]
+ a18(r105): [51..58]
+ a19(r104): [53..60]
+ a20(r103): [55..62]
+Compressing live ranges: from 65 to 28 - 43%
+Ranges after the compression:
+ a0(r102): [0..1]
+ a1(r95): [2..13]
+ a2(r101): [2..3]
+ a3(r100): [4..5]
+ a4(r99): [6..7]
+ a5(r98): [8..9]
+ a6(r97): [10..11]
+ a7(r96): [12..13]
+ a8(r94): [14..15]
+ a9(r107): [14..15]
+ a10(r90): [16..21]
+ a11(r93): [16..17]
+ a12(r92): [18..19]
+ a13(r91): [20..21]
+ a14(r87): [22..25]
+ a15(r89): [22..23]
+ a16(r88): [24..25]
+ a17(r106): [26..27]
+ a18(r105): [26..27]
+ a19(r104): [26..27]
+ a20(r103): [26..27]
+  regions=1, blocks=3, points=28
+    allocnos=21 (big 0), copies=0, conflicts=0, ranges=21
+Disposition:
+   14:r87  l0     0   16:r88  l0     1   15:r89  l0     1   10:r90  l0     0
+   13:r91  l0     1   12:r92  l0     1   11:r93  l0     1    8:r94  l0     0
+    1:r95  l0     0    7:r96  l0     1    6:r97  l0     1    5:r98  l0     1
+    4:r99  l0     1    3:r100 l0     1    2:r101 l0     1    0:r102 l0     0
+   20:r103 l0     3   19:r104 l0     2   18:r105 l0     1   17:r106 l0     0
+    9:r107 l0     1
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+static void InterruptManager::SetInterruptDescriptorTableEntry(uint8_t, uint16_t, void (*)(), uint8_t, uint8_t)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 6[bp] 17[flags]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r6={1d,2u} r7={1d,2u} r16={1d,7u} r17={5d} r20={1d,15u} r87={1d,1u} r88={1d,1u} r89={1d,1u} r90={1d,1u} r91={1d,1u} r92={1d,1u} r93={1d,1u} r94={1d,1u} r95={1d,1u} r96={1d,1u} r97={1d,1u} r98={1d,1u} r99={1d,1u} r100={1d,1u} r101={1d,1u} r102={1d,1u} r103={1d,1u} r104={1d,1u} r105={1d,1u} r106={1d,1u} r107={1d,1u} 
+;;    total ref usage 80{33d,47u,0e} in 32{32 regular + 0 call} insns.
+(note 1 0 11 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107
+(note 11 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 11 4 2 (set (reg:SI 103)
+        (mem/c:SI (reg/f:SI 16 argp) [0 interruptNumber+0 S4 A32])) interrupts.cpp:27 90 {*movsi_internal}
+     (nil))
+(insn 4 2 6 2 (set (reg:SI 104)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 csSelectorOffset+0 S4 A32])) interrupts.cpp:27 90 {*movsi_internal}
+     (nil))
+(insn 6 4 8 2 (set (reg:SI 105)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 12 [0xc])) [0 DescriptorPriviligeLevel+0 S4 A32])) interrupts.cpp:27 90 {*movsi_internal}
+     (nil))
+(insn 8 6 3 2 (set (reg:SI 106)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 16 [0x10])) [0 DescriptorType+0 S4 A32])) interrupts.cpp:27 90 {*movsi_internal}
+     (nil))
+(insn 3 8 5 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+        (subreg:QI (reg:SI 103) 0)) interrupts.cpp:27 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 103)
+        (nil)))
+(insn 5 3 7 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -24 [0xffffffffffffffe8])) [0 csSelectorOffset+0 S2 A32])
+        (subreg:HI (reg:SI 104) 0)) interrupts.cpp:27 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:SI 104)
+        (nil)))
+(insn 7 5 9 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -28 [0xffffffffffffffe4])) [0 DescriptorPriviligeLevel+0 S1 A32])
+        (subreg:QI (reg:SI 105) 0)) interrupts.cpp:27 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 105)
+        (nil)))
+(insn 9 7 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -32 [0xffffffffffffffe0])) [0 DescriptorType+0 S1 A32])
+        (subreg:QI (reg:SI 106) 0)) interrupts.cpp:27 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 106)
+        (nil)))
+(note 10 9 13 2 NOTE_INSN_FUNCTION_BEG)
+(insn 13 10 14 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -1 [0xffffffffffffffff])) [0 IDT_DESC_PRESENT+0 S1 A8])
+        (const_int -128 [0xffffffffffffff80])) interrupts.cpp:28 93 {*movqi_internal}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 87 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:29 138 {*zero_extendqisi2}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 88 [ D.1635 ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 handler+0 S4 A32])) interrupts.cpp:29 90 {*movsi_internal}
+     (nil))
+(insn 16 15 17 2 (set (reg:HI 89 [ D.1636 ])
+        (subreg:HI (reg:SI 88 [ D.1635 ]) 0)) interrupts.cpp:29 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:SI 88 [ D.1635 ])
+        (nil)))
+(insn 17 16 18 2 (set (mem/j:HI (plus:SI (mult:SI (reg:SI 87 [ D.1635 ])
+                    (const_int 8 [0x8]))
+                (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)) [0 interruptDescriptorTable[_3].handlerAddressLowBits+0 S2 A64])
+        (reg:HI 89 [ D.1636 ])) interrupts.cpp:29 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:HI 89 [ D.1636 ])
+        (expr_list:REG_DEAD (reg:SI 87 [ D.1635 ])
+            (nil))))
+(insn 18 17 19 2 (set (reg:SI 90 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:30 138 {*zero_extendqisi2}
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 91 [ D.1637 ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 handler+0 S4 A32])) interrupts.cpp:30 90 {*movsi_internal}
+     (nil))
+(insn 20 19 21 2 (parallel [
+            (set (reg:SI 92 [ D.1637 ])
+                (lshiftrt:SI (reg:SI 91 [ D.1637 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:30 544 {*lshrsi3_1}
+     (expr_list:REG_DEAD (reg:SI 91 [ D.1637 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 21 20 22 2 (set (reg:HI 93 [ D.1636 ])
+        (subreg:HI (reg:SI 92 [ D.1637 ]) 0)) interrupts.cpp:30 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:SI 92 [ D.1637 ])
+        (nil)))
+(insn 22 21 23 2 (set (mem/j:HI (plus:SI (mult:SI (reg:SI 90 [ D.1635 ])
+                    (const_int 8 [0x8]))
+                (const:SI (plus:SI (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)
+                        (const_int 6 [0x6])))) [0 interruptDescriptorTable[_9].handlerAddressHighBits+0 S2 A16])
+        (reg:HI 93 [ D.1636 ])) interrupts.cpp:30 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:HI 93 [ D.1636 ])
+        (expr_list:REG_DEAD (reg:SI 90 [ D.1635 ])
+            (nil))))
+(insn 23 22 24 2 (set (reg:SI 94 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:31 138 {*zero_extendqisi2}
+     (nil))
+(insn 24 23 25 2 (set (reg:HI 107)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -24 [0xffffffffffffffe8])) [0 csSelectorOffset+0 S2 A32])) interrupts.cpp:31 92 {*movhi_internal}
+     (nil))
+(insn 25 24 26 2 (set (mem/j:HI (plus:SI (mult:SI (reg:SI 94 [ D.1635 ])
+                    (const_int 8 [0x8]))
+                (const:SI (plus:SI (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)
+                        (const_int 2 [0x2])))) [0 interruptDescriptorTable[_14].gdt_cs_selector+0 S2 A16])
+        (reg:HI 107)) interrupts.cpp:31 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:HI 107)
+        (expr_list:REG_DEAD (reg:SI 94 [ D.1635 ])
+            (nil))))
+(insn 26 25 27 2 (set (reg:SI 95 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:32 138 {*zero_extendqisi2}
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 96 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -28 [0xffffffffffffffe4])) [0 DescriptorPriviligeLevel+0 S1 A32]))) interrupts.cpp:32 138 {*zero_extendqisi2}
+     (nil))
+(insn 28 27 29 2 (parallel [
+            (set (reg:SI 97 [ D.1635 ])
+                (and:SI (reg:SI 96 [ D.1635 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:32 381 {*andsi_1}
+     (expr_list:REG_DEAD (reg:SI 96 [ D.1635 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 29 28 30 2 (parallel [
+            (set (reg:SI 98 [ D.1635 ])
+                (ashift:SI (reg:SI 97 [ D.1635 ])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:32 511 {*ashlsi3_1}
+     (expr_list:REG_DEAD (reg:SI 97 [ D.1635 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 30 29 31 2 (set (reg:QI 99 [ D.1638 ])
+        (subreg:QI (reg:SI 98 [ D.1635 ]) 0)) interrupts.cpp:32 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 98 [ D.1635 ])
+        (nil)))
+(insn 31 30 32 2 (parallel [
+            (set (reg:QI 100 [ D.1638 ])
+                (ior:QI (reg:QI 99 [ D.1638 ])
+                    (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                            (const_int -32 [0xffffffffffffffe0])) [0 DescriptorType+0 S1 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:32 405 {*iorqi_1}
+     (expr_list:REG_DEAD (reg:QI 99 [ D.1638 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 32 31 33 2 (parallel [
+            (set (reg:QI 101 [ D.1638 ])
+                (ior:QI (reg:QI 100 [ D.1638 ])
+                    (const_int -128 [0xffffffffffffff80])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:32 405 {*iorqi_1}
+     (expr_list:REG_DEAD (reg:QI 100 [ D.1638 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 33 32 34 2 (set (mem/j:QI (plus:SI (mult:SI (reg:SI 95 [ D.1635 ])
+                    (const_int 8 [0x8]))
+                (const:SI (plus:SI (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)
+                        (const_int 5 [0x5])))) [0 interruptDescriptorTable[_17].access+0 S1 A8])
+        (reg:QI 101 [ D.1638 ])) interrupts.cpp:32 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:QI 101 [ D.1638 ])
+        (expr_list:REG_DEAD (reg:SI 95 [ D.1635 ])
+            (nil))))
+(insn 34 33 35 2 (set (reg:SI 102 [ D.1635 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:33 138 {*zero_extendqisi2}
+     (nil))
+(insn 35 34 38 2 (set (mem/j:QI (plus:SI (mult:SI (reg:SI 102 [ D.1635 ])
+                    (const_int 8 [0x8]))
+                (const:SI (plus:SI (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)
+                        (const_int 4 [0x4])))) [0 interruptDescriptorTable[_27].reserved+0 S1 A32])
+        (const_int 0 [0])) interrupts.cpp:33 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 102 [ D.1635 ])
+        (nil)))
+(insn 38 35 0 2 (const_int 0 [0]) interrupts.cpp:34 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function InterruptManager::InterruptManager(GlobalDescriptorTable*) (_ZN16InterruptManagerC2EP21GlobalDescriptorTable, funcdef_no=16, decl_uid=1373, cgraph_uid=16, symbol_order=18)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 6 n_edges 6 count 6 (    1)
+Building IRA IR
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 17.
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 35.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 73.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 89.
+verify found no changes in insn with uid = 96.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 110.
+verify found no changes in insn with uid = 117.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 131.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 145.
+verify found no changes in insn with uid = 152.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r127: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a5 (r127,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r126: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a7 (r126,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r125: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a9 (r125,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r124: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a11 (r124,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r123: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a13 (r123,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a15 (r122,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a17 (r121,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r120: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a19 (r120,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a21 (r119,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a23 (r118,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a29 (r117,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a30 (r116,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a34 (r115,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a36 (r114,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a38 (r113,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r112: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a40 (r112,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r111: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r111,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r110: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r110,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r109: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a2 (r109,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r108: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a3 (r108,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r107: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a4 (r107,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r106: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a6 (r106,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r105: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a8 (r105,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r104: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a10 (r104,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r103: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a12 (r103,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r102: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a14 (r102,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r101: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a16 (r101,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r100: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a18 (r100,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r99: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a20 (r99,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r98: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a22 (r98,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r97: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a24 (r97,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r96: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a25 (r96,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r95: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a26 (r95,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r94: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a28 (r94,l0) best Q_REGS, allocno Q_REGS
+    r93: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a27 (r93,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r92: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a31 (r92,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r91: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a32 (r91,l0) best AREG, allocno GENERAL_REGS
+    r90: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a33 (r90,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r89: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a35 (r89,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a37 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a39 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r111,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+  a1(r110,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a2(r109,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:6
+  a3(r108,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:4
+  a4(r107,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a5(r127,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a6(r106,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a7(r126,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a8(r105,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a9(r125,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a10(r104,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a11(r124,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a12(r103,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a13(r123,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a14(r102,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a15(r122,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a16(r101,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a17(r121,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a18(r100,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a19(r120,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a20(r99,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a21(r119,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a22(r98,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a23(r118,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a24(r97,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a25(r96,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a26(r95,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a27(r93,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a28(r94,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:4
+  a29(r117,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a30(r116,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a31(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a32(r91,l0) costs: AREG:2 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:5
+  a33(r90,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a34(r115,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a35(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a36(r114,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a37(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a38(r113,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a39(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a40(r112,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+
+   Insn 163(l0): point = 0
+   Insn 160(l0): point = 2
+   Insn 159(l0): point = 4
+   Insn 158(l0): point = 6
+   Insn 157(l0): point = 8
+   Insn 156(l0): point = 10
+   Insn 155(l0): point = 12
+   Insn 154(l0): point = 14
+   Insn 153(l0): point = 16
+   Insn 152(l0): point = 18
+   Insn 151(l0): point = 20
+   Insn 150(l0): point = 22
+   Insn 149(l0): point = 24
+   Insn 148(l0): point = 26
+   Insn 147(l0): point = 28
+   Insn 146(l0): point = 30
+   Insn 145(l0): point = 32
+   Insn 144(l0): point = 34
+   Insn 143(l0): point = 36
+   Insn 142(l0): point = 38
+   Insn 141(l0): point = 40
+   Insn 140(l0): point = 42
+   Insn 139(l0): point = 44
+   Insn 138(l0): point = 46
+   Insn 137(l0): point = 48
+   Insn 136(l0): point = 50
+   Insn 135(l0): point = 52
+   Insn 134(l0): point = 54
+   Insn 133(l0): point = 56
+   Insn 132(l0): point = 58
+   Insn 131(l0): point = 60
+   Insn 130(l0): point = 62
+   Insn 129(l0): point = 64
+   Insn 128(l0): point = 66
+   Insn 127(l0): point = 68
+   Insn 126(l0): point = 70
+   Insn 125(l0): point = 72
+   Insn 124(l0): point = 74
+   Insn 123(l0): point = 76
+   Insn 122(l0): point = 78
+   Insn 121(l0): point = 80
+   Insn 120(l0): point = 82
+   Insn 119(l0): point = 84
+   Insn 118(l0): point = 86
+   Insn 117(l0): point = 88
+   Insn 116(l0): point = 90
+   Insn 115(l0): point = 92
+   Insn 114(l0): point = 94
+   Insn 113(l0): point = 96
+   Insn 112(l0): point = 98
+   Insn 111(l0): point = 100
+   Insn 110(l0): point = 102
+   Insn 109(l0): point = 104
+   Insn 108(l0): point = 106
+   Insn 107(l0): point = 108
+   Insn 106(l0): point = 110
+   Insn 105(l0): point = 112
+   Insn 104(l0): point = 114
+   Insn 103(l0): point = 116
+   Insn 102(l0): point = 118
+   Insn 101(l0): point = 120
+   Insn 100(l0): point = 122
+   Insn 99(l0): point = 124
+   Insn 98(l0): point = 126
+   Insn 97(l0): point = 128
+   Insn 96(l0): point = 130
+   Insn 95(l0): point = 132
+   Insn 94(l0): point = 134
+   Insn 93(l0): point = 136
+   Insn 92(l0): point = 138
+   Insn 91(l0): point = 140
+   Insn 90(l0): point = 142
+   Insn 89(l0): point = 144
+   Insn 88(l0): point = 146
+   Insn 87(l0): point = 148
+   Insn 86(l0): point = 150
+   Insn 85(l0): point = 152
+   Insn 84(l0): point = 154
+   Insn 83(l0): point = 156
+   Insn 82(l0): point = 158
+   Insn 81(l0): point = 160
+   Insn 80(l0): point = 162
+   Insn 79(l0): point = 164
+   Insn 78(l0): point = 166
+   Insn 77(l0): point = 168
+   Insn 76(l0): point = 170
+   Insn 75(l0): point = 172
+   Insn 74(l0): point = 174
+   Insn 73(l0): point = 176
+   Insn 72(l0): point = 178
+   Insn 71(l0): point = 180
+   Insn 70(l0): point = 182
+   Insn 69(l0): point = 184
+   Insn 68(l0): point = 186
+   Insn 67(l0): point = 188
+   Insn 66(l0): point = 190
+   Insn 43(l0): point = 193
+   Insn 42(l0): point = 195
+   Insn 164(l0): point = 198
+   Insn 60(l0): point = 200
+   Insn 59(l0): point = 202
+   Insn 58(l0): point = 204
+   Insn 57(l0): point = 206
+   Insn 56(l0): point = 208
+   Insn 55(l0): point = 210
+   Insn 54(l0): point = 212
+   Insn 53(l0): point = 214
+   Insn 52(l0): point = 216
+   Insn 51(l0): point = 218
+   Insn 50(l0): point = 220
+   Insn 49(l0): point = 222
+   Insn 48(l0): point = 224
+   Insn 47(l0): point = 226
+   Insn 46(l0): point = 228
+   Insn 45(l0): point = 230
+   Insn 40(l0): point = 233
+   Insn 39(l0): point = 235
+   Insn 38(l0): point = 237
+   Insn 37(l0): point = 239
+   Insn 36(l0): point = 241
+   Insn 35(l0): point = 243
+   Insn 34(l0): point = 245
+   Insn 33(l0): point = 247
+   Insn 32(l0): point = 249
+   Insn 31(l0): point = 251
+   Insn 30(l0): point = 253
+   Insn 29(l0): point = 255
+   Insn 28(l0): point = 257
+   Insn 27(l0): point = 259
+   Insn 26(l0): point = 261
+   Insn 25(l0): point = 263
+   Insn 24(l0): point = 265
+   Insn 23(l0): point = 267
+   Insn 22(l0): point = 269
+   Insn 21(l0): point = 271
+   Insn 20(l0): point = 273
+   Insn 19(l0): point = 275
+   Insn 18(l0): point = 277
+   Insn 17(l0): point = 279
+   Insn 16(l0): point = 281
+   Insn 15(l0): point = 283
+   Insn 14(l0): point = 285
+   Insn 13(l0): point = 287
+   Insn 12(l0): point = 289
+   Insn 11(l0): point = 291
+   Insn 10(l0): point = 293
+   Insn 9(l0): point = 295
+   Insn 8(l0): point = 297
+   Insn 7(l0): point = 299
+   Insn 6(l0): point = 301
+   Insn 5(l0): point = 303
+ a0(r111): [5..6]
+ a1(r110): [9..10]
+ a2(r109): [11..12]
+ a3(r108): [13..14]
+ a4(r107): [21..26]
+ a5(r127): [27..28]
+ a6(r106): [35..40]
+ a7(r126): [41..42]
+ a8(r105): [49..54]
+ a9(r125): [55..56]
+ a10(r104): [63..68]
+ a11(r124): [69..70]
+ a12(r103): [77..82]
+ a13(r123): [83..84]
+ a14(r102): [91..96]
+ a15(r122): [97..98]
+ a16(r101): [105..110]
+ a17(r121): [111..112]
+ a18(r100): [119..124]
+ a19(r120): [125..126]
+ a20(r99): [133..138]
+ a21(r119): [139..140]
+ a22(r98): [147..152]
+ a23(r118): [153..154]
+ a24(r97): [163..172]
+ a25(r96): [181..190]
+ a26(r95): [207..218]
+ a27(r93): [209..224]
+ a28(r94): [219..220]
+ a29(r117): [221..222]
+ a30(r116): [227..228]
+ a31(r92): [227..230]
+ a32(r91): [238..239]
+ a33(r90): [254..259]
+ a34(r115): [260..261]
+ a35(r89): [268..273]
+ a36(r114): [274..275]
+ a37(r88): [282..287]
+ a38(r113): [288..289]
+ a39(r87): [296..301]
+ a40(r112): [302..303]
+Compressing live ranges: from 306 to 78 - 25%
+Ranges after the compression:
+ a0(r111): [0..1]
+ a1(r110): [2..3]
+ a2(r109): [4..5]
+ a3(r108): [6..7]
+ a4(r107): [8..9]
+ a5(r127): [10..11]
+ a6(r106): [12..13]
+ a7(r126): [14..15]
+ a8(r105): [16..17]
+ a9(r125): [18..19]
+ a10(r104): [20..21]
+ a11(r124): [22..23]
+ a12(r103): [24..25]
+ a13(r123): [26..27]
+ a14(r102): [28..29]
+ a15(r122): [30..31]
+ a16(r101): [32..33]
+ a17(r121): [34..35]
+ a18(r100): [36..37]
+ a19(r120): [38..39]
+ a20(r99): [40..41]
+ a21(r119): [42..43]
+ a22(r98): [44..45]
+ a23(r118): [46..47]
+ a24(r97): [48..49]
+ a25(r96): [50..51]
+ a26(r95): [52..53]
+ a27(r93): [52..57]
+ a28(r94): [54..55]
+ a29(r117): [56..57]
+ a30(r116): [58..59]
+ a31(r92): [58..59]
+ a32(r91): [60..61]
+ a33(r90): [62..63]
+ a34(r115): [64..65]
+ a35(r89): [66..67]
+ a36(r114): [68..69]
+ a37(r88): [70..71]
+ a38(r113): [72..73]
+ a39(r87): [74..75]
+ a40(r112): [76..77]
+  pref0:a32(r91)<-hr0@1
+  regions=1, blocks=6, points=78
+    allocnos=41 (big 0), copies=0, conflicts=0, ranges=41
+Disposition:
+   39:r87  l0     0   37:r88  l0     0   35:r89  l0     0   33:r90  l0     0
+   32:r91  l0     0   31:r92  l0     1   27:r93  l0     1   28:r94  l0     0
+   26:r95  l0     0   25:r96  l0     0   24:r97  l0     0   22:r98  l0     0
+   20:r99  l0     0   18:r100 l0     0   16:r101 l0     0   14:r102 l0     0
+   12:r103 l0     0   10:r104 l0     0    8:r105 l0     0    6:r106 l0     0
+    4:r107 l0     0    3:r108 l0     0    2:r109 l0     0    1:r110 l0     0
+    0:r111 l0     0   40:r112 l0     0   38:r113 l0     0   36:r114 l0     0
+   34:r115 l0     0   30:r116 l0     0   29:r117 l0     0   23:r118 l0     0
+   21:r119 l0     0   19:r120 l0     0   17:r121 l0     0   15:r122 l0     0
+   13:r123 l0     0   11:r124 l0     0    9:r125 l0     0    7:r126 l0     0
+    5:r127 l0     0
++++Costs: overall -1, reg -1, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+InterruptManager::InterruptManager(GlobalDescriptorTable*)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 0[ax] 6[bp] 7[sp] 17[flags] 18[fpsr]
+;;  ref usage 	r0={19d,1u} r1={19d} r2={19d} r6={1d,5u} r7={81d,139u} r8={18d} r9={18d} r10={18d} r11={18d} r12={18d} r13={18d} r14={18d} r15={18d} r16={1d,20u,14e} r17={73d,1u} r18={19d} r19={18d} r20={1d,19u} r21={18d} r22={18d} r23={18d} r24={18d} r25={18d} r26={18d} r27={18d} r28={18d} r29={18d} r30={18d} r31={18d} r32={18d} r33={18d} r34={18d} r35={18d} r36={18d} r37={18d} r38={18d} r39={18d} r40={18d} r41={18d} r42={18d} r43={18d} r44={18d} r45={18d} r46={18d} r47={18d} r48={18d} r49={18d} r50={18d} r51={18d} r52={18d} r53={18d} r54={18d} r55={18d} r56={18d} r57={18d} r58={18d} r59={18d} r60={18d} r61={18d} r62={18d} r63={18d} r64={18d} r65={18d} r66={18d} r67={18d} r68={18d} r69={18d} r70={18d} r71={18d} r72={18d} r73={18d} r74={18d} r75={18d} r76={18d} r77={18d} r78={18d} r79={18d} r80={18d} r87={1d,1u} r88={1d,1u} r89={1d,1u} r90={1d,1u} r91={1d,1u} r92={1d,1u} r93={1d,1u} r94={1d,1u} r95={1d,1u} r96={1d,1u} r97={1d,1u} r98={1d,1u} r99={1d,1u} r100={1d,1u} r101={1d,1u} r102={1d,1u} r103={1d,1u} r104={1d,1u} r105={1d,1u} r106={1d,1u} r107={1d,1u} r108={1d,1u} r109={1d,1u} r110={1d,1u} r111={1d,1u} r112={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,1u} r126={1d,1u} r127={1d,1u} 
+;;    total ref usage 1756{1516d,226u,14e} in 151{133 regular + 18 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 87 88 89 90 91 112 113 114 115
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 112)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:40 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (set (reg/f:SI 87 [ D.1639 ])
+                (plus:SI (reg/f:SI 112)
+                    (const_int 1024 [0x400])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 112)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1024 [0x400]))
+                (nil)))))
+(insn 7 6 8 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 8 7 9 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 9 8 10 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 87 [ D.1639 ])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 87 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlowC1Et") [flags 0x41]  <function_decl 0x7f920468dd80 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:40 659 {*call}
+     (nil)
+    (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 12 11 13 2 (set (reg/f:SI 113)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:40 90 {*movsi_internal}
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 88 [ D.1639 ])
+                (plus:SI (reg/f:SI 113)
+                    (const_int 1032 [0x408])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 113)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1032 [0x408]))
+                (nil)))))
+(insn 14 13 15 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 15 14 16 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 160 [0xa0])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 16 15 17 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1639 ])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 88 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 17 16 18 2 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlowC1Et") [flags 0x41]  <function_decl 0x7f920468dd80 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:40 659 {*call}
+     (nil)
+    (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 19 18 20 2 (set (reg/f:SI 114)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:40 90 {*movsi_internal}
+     (nil))
+(insn 20 19 21 2 (parallel [
+            (set (reg/f:SI 89 [ D.1639 ])
+                (plus:SI (reg/f:SI 114)
+                    (const_int 1040 [0x410])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 114)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1040 [0x410]))
+                (nil)))))
+(insn 21 20 22 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 22 21 23 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 33 [0x21])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 23 22 24 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 89 [ D.1639 ])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 89 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 24 23 25 2 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlowC1Et") [flags 0x41]  <function_decl 0x7f920468dd80 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:40 659 {*call}
+     (nil)
+    (nil))
+(insn 25 24 26 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 26 25 27 2 (set (reg/f:SI 115)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:40 90 {*movsi_internal}
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg/f:SI 90 [ D.1639 ])
+                (plus:SI (reg/f:SI 115)
+                    (const_int 1048 [0x418])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1048 [0x418]))
+                (nil)))))
+(insn 28 27 29 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 29 28 30 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 161 [0xa1])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 30 29 31 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1639 ])) interrupts.cpp:40 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 90 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 31 30 32 2 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlowC1Et") [flags 0x41]  <function_decl 0x7f920468dd80 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:40 659 {*call}
+     (nil)
+    (nil))
+(insn 32 31 33 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:40 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 33 32 34 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:43 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 34 33 35 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 gdt+0 S4 A32])) interrupts.cpp:43 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 35 34 36 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN21GlobalDescriptorTable20GetCodeSegmentOffsetEv") [flags 0x41]  <function_decl 0x7f92046825e8 GetCodeSegmentOffset>) [0 GetCodeSegmentOffset S1 A8])
+            (const_int 16 [0x10]))) interrupts.cpp:43 668 {*call_value}
+     (nil)
+    (nil))
+(insn 36 35 37 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:43 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 37 36 38 2 (set (reg:HI 91 [ D.1640 ])
+        (reg:HI 0 ax)) interrupts.cpp:43 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:HI 0 ax)
+        (nil)))
+(insn 38 37 39 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -3 [0xfffffffffffffffd])) [0 CodeSegment+0 S1 A8])
+        (subreg:QI (reg:HI 91 [ D.1640 ]) 0)) interrupts.cpp:43 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:HI 91 [ D.1640 ])
+        (nil)))
+(insn 39 38 40 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 IDT_INTERRUPT_GATE+0 S1 A8])
+        (const_int 14 [0xe])) interrupts.cpp:44 93 {*movqi_internal}
+     (nil))
+(insn 40 39 61 2 (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16])
+        (const_int 0 [0])) interrupts.cpp:45 92 {*movhi_internal}
+     (nil))
+;;  succ:       3 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 4, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;;              4 [100.0%] 
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags]
+(code_label 61 40 41 3 10 "" [1 uses])
+(note 41 61 42 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 3 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16])
+            (const_int 255 [0xff]))) interrupts.cpp:45 6 {*cmphi_1}
+     (nil))
+(jump_insn 43 42 44 3 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) interrupts.cpp:45 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CC 17 flags)
+        (nil))
+ -> 64)
+;;  succ:       5
+;;              4 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 5, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       3 (FALLTHRU)
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 92 93 94 95 116 117
+(note 44 43 45 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 4 (set (reg:SI 92 [ D.1641 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16]))) interrupts.cpp:46 139 {*zero_extendhisi2}
+     (nil))
+(insn 46 45 47 4 (set (reg/f:SI 116)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:46 90 {*movsi_internal}
+     (nil))
+(insn 47 46 48 4 (set (mem/f/j:SI (plus:SI (mult:SI (reg:SI 92 [ D.1641 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 116)) [0 this_3(D)->handlers S4 A32])
+        (const_int 0 [0])) interrupts.cpp:46 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 116)
+        (expr_list:REG_DEAD (reg:SI 92 [ D.1641 ])
+            (nil))))
+(insn 48 47 49 4 (set (reg:SI 93 [ D.1641 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -3 [0xfffffffffffffffd])) [0 CodeSegment+0 S1 A8]))) interrupts.cpp:47 138 {*zero_extendqisi2}
+     (nil))
+(insn 49 48 50 4 (set (reg:HI 117)
+        (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16])) interrupts.cpp:47 92 {*movhi_internal}
+     (nil))
+(insn 50 49 51 4 (set (reg:QI 94 [ D.1642 ])
+        (subreg:QI (reg:HI 117) 0)) interrupts.cpp:47 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:HI 117)
+        (nil)))
+(insn 51 50 52 4 (set (reg:SI 95 [ D.1641 ])
+        (zero_extend:SI (reg:QI 94 [ D.1642 ]))) interrupts.cpp:47 138 {*zero_extendqisi2}
+     (expr_list:REG_DEAD (reg:QI 94 [ D.1642 ])
+        (nil)))
+(insn 52 51 53 4 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:47 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 53 52 54 4 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 14 [0xe])) interrupts.cpp:47 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 54 53 55 4 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 0 [0])) interrupts.cpp:47 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 20 [0x14])
+        (nil)))
+(insn 55 54 56 4 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (symbol_ref:SI ("_ZN16InterruptManager22IgnoreInterruptRequestEv") [flags 0x41]  <function_decl 0x7f92046a7510 IgnoreInterruptRequest>)) interrupts.cpp:47 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 56 55 57 4 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 93 [ D.1641 ])) interrupts.cpp:47 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg:SI 93 [ D.1641 ])
+        (expr_list:REG_ARGS_SIZE (const_int 28 [0x1c])
+            (nil))))
+(insn 57 56 58 4 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 95 [ D.1641 ])) interrupts.cpp:47 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg:SI 95 [ D.1641 ])
+        (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+            (nil))))
+(call_insn 58 57 59 4 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager32SetInterruptDescriptorTableEntryEhtPFvvEhh") [flags 0x3]  <function_decl 0x7f920469cd80 SetInterruptDescriptorTableEntry>) [0 SetInterruptDescriptorTableEntry S1 A8])
+        (const_int 32 [0x20])) interrupts.cpp:47 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 59 58 60 4 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:47 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 60 59 164 4 (parallel [
+            (set (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                        (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16])
+                (plus:HI (mem/c:HI (plus:SI (reg/f:SI 20 frame)
+                            (const_int -2 [0xfffffffffffffffe])) [0 i+0 S2 A16])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:45 220 {*addhi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (nil)))
+(jump_insn 164 60 165 4 (set (pc)
+        (label_ref 61)) interrupts.cpp:45 654 {jump}
+     (nil)
+ -> 61)
+;;  succ:       3 [100.0%] 
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+(barrier 165 164 64)
+;; basic block 5, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 4, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       3
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 118 119 120 121 122 123 124 125 126 127
+(code_label 64 165 65 5 9 "" [1 uses])
+(note 65 64 66 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 5 (set (reg:SI 96 [ D.1641 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -3 [0xfffffffffffffffd])) [0 CodeSegment+0 S1 A8]))) interrupts.cpp:49 138 {*zero_extendqisi2}
+     (nil))
+(insn 67 66 68 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:49 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 68 67 69 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 14 [0xe])) interrupts.cpp:49 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 69 68 70 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 0 [0])) interrupts.cpp:49 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 20 [0x14])
+        (nil)))
+(insn 70 69 71 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (symbol_ref:SI ("_ZN16InterruptManager26handleInterruptRequest0x00Ev") [flags 0x41]  <function_decl 0x7f92046a7360 handleInterruptRequest0x00>)) interrupts.cpp:49 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 71 70 72 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 96 [ D.1641 ])) interrupts.cpp:49 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg:SI 96 [ D.1641 ])
+        (expr_list:REG_ARGS_SIZE (const_int 28 [0x1c])
+            (nil))))
+(insn 72 71 73 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) interrupts.cpp:49 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 73 72 74 5 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager32SetInterruptDescriptorTableEntryEhtPFvvEhh") [flags 0x3]  <function_decl 0x7f920469cd80 SetInterruptDescriptorTableEntry>) [0 SetInterruptDescriptorTableEntry S1 A8])
+        (const_int 32 [0x20])) interrupts.cpp:49 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 74 73 75 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:49 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 75 74 76 5 (set (reg:SI 97 [ D.1641 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -3 [0xfffffffffffffffd])) [0 CodeSegment+0 S1 A8]))) interrupts.cpp:50 138 {*zero_extendqisi2}
+     (nil))
+(insn 76 75 77 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:50 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 77 76 78 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 14 [0xe])) interrupts.cpp:50 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 78 77 79 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 0 [0])) interrupts.cpp:50 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 20 [0x14])
+        (nil)))
+(insn 79 78 80 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (symbol_ref:SI ("_ZN16InterruptManager26handleInterruptRequest0x01Ev") [flags 0x41]  <function_decl 0x7f92046a7438 handleInterruptRequest0x01>)) interrupts.cpp:50 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 80 79 81 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 97 [ D.1641 ])) interrupts.cpp:50 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg:SI 97 [ D.1641 ])
+        (expr_list:REG_ARGS_SIZE (const_int 28 [0x1c])
+            (nil))))
+(insn 81 80 82 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 33 [0x21])) interrupts.cpp:50 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(call_insn 82 81 83 5 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager32SetInterruptDescriptorTableEntryEhtPFvvEhh") [flags 0x3]  <function_decl 0x7f920469cd80 SetInterruptDescriptorTableEntry>) [0 SetInterruptDescriptorTableEntry S1 A8])
+        (const_int 32 [0x20])) interrupts.cpp:50 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 83 82 84 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:50 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 84 83 85 5 (set (reg/f:SI 118)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:52 90 {*movsi_internal}
+     (nil))
+(insn 85 84 86 5 (parallel [
+            (set (reg/f:SI 98 [ D.1639 ])
+                (plus:SI (reg/f:SI 118)
+                    (const_int 1024 [0x400])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:52 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 118)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1024 [0x400]))
+                (nil)))))
+(insn 86 85 87 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:52 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 87 86 88 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 17 [0x11])) interrupts.cpp:52 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 88 87 89 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 98 [ D.1639 ])) interrupts.cpp:52 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 98 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 89 88 90 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:52 659 {*call}
+     (nil)
+    (nil))
+(insn 90 89 91 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:52 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 91 90 92 5 (set (reg/f:SI 119)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:53 90 {*movsi_internal}
+     (nil))
+(insn 92 91 93 5 (parallel [
+            (set (reg/f:SI 99 [ D.1639 ])
+                (plus:SI (reg/f:SI 119)
+                    (const_int 1032 [0x408])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:53 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 119)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1032 [0x408]))
+                (nil)))))
+(insn 93 92 94 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:53 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 94 93 95 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 17 [0x11])) interrupts.cpp:53 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 95 94 96 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 99 [ D.1639 ])) interrupts.cpp:53 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 99 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 96 95 97 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:53 659 {*call}
+     (nil)
+    (nil))
+(insn 97 96 98 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:53 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 98 97 99 5 (set (reg/f:SI 120)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:55 90 {*movsi_internal}
+     (nil))
+(insn 99 98 100 5 (parallel [
+            (set (reg/f:SI 100 [ D.1639 ])
+                (plus:SI (reg/f:SI 120)
+                    (const_int 1040 [0x410])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:55 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 120)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1040 [0x410]))
+                (nil)))))
+(insn 100 99 101 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:55 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 101 100 102 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) interrupts.cpp:55 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 102 101 103 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 100 [ D.1639 ])) interrupts.cpp:55 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 100 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 103 102 104 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:55 659 {*call}
+     (nil)
+    (nil))
+(insn 104 103 105 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:55 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 105 104 106 5 (set (reg/f:SI 121)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:56 90 {*movsi_internal}
+     (nil))
+(insn 106 105 107 5 (parallel [
+            (set (reg/f:SI 101 [ D.1639 ])
+                (plus:SI (reg/f:SI 121)
+                    (const_int 1048 [0x418])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:56 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 121)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1048 [0x418]))
+                (nil)))))
+(insn 107 106 108 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:56 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 108 107 109 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 40 [0x28])) interrupts.cpp:56 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 109 108 110 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 101 [ D.1639 ])) interrupts.cpp:56 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 101 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 110 109 111 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:56 659 {*call}
+     (nil)
+    (nil))
+(insn 111 110 112 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:56 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 112 111 113 5 (set (reg/f:SI 122)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:58 90 {*movsi_internal}
+     (nil))
+(insn 113 112 114 5 (parallel [
+            (set (reg/f:SI 102 [ D.1639 ])
+                (plus:SI (reg/f:SI 122)
+                    (const_int 1040 [0x410])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:58 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 122)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1040 [0x410]))
+                (nil)))))
+(insn 114 113 115 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:58 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 115 114 116 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 4 [0x4])) interrupts.cpp:58 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 116 115 117 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 102 [ D.1639 ])) interrupts.cpp:58 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 102 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 117 116 118 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:58 659 {*call}
+     (nil)
+    (nil))
+(insn 118 117 119 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:58 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 119 118 120 5 (set (reg/f:SI 123)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:59 90 {*movsi_internal}
+     (nil))
+(insn 120 119 121 5 (parallel [
+            (set (reg/f:SI 103 [ D.1639 ])
+                (plus:SI (reg/f:SI 123)
+                    (const_int 1048 [0x418])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:59 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 123)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1048 [0x418]))
+                (nil)))))
+(insn 121 120 122 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:59 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 122 121 123 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 2 [0x2])) interrupts.cpp:59 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 123 122 124 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 103 [ D.1639 ])) interrupts.cpp:59 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 103 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 124 123 125 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:59 659 {*call}
+     (nil)
+    (nil))
+(insn 125 124 126 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:59 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 126 125 127 5 (set (reg/f:SI 124)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:61 90 {*movsi_internal}
+     (nil))
+(insn 127 126 128 5 (parallel [
+            (set (reg/f:SI 104 [ D.1639 ])
+                (plus:SI (reg/f:SI 124)
+                    (const_int 1040 [0x410])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:61 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 124)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1040 [0x410]))
+                (nil)))))
+(insn 128 127 129 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:61 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 129 128 130 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 1 [0x1])) interrupts.cpp:61 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 130 129 131 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 104 [ D.1639 ])) interrupts.cpp:61 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 104 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 131 130 132 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:61 659 {*call}
+     (nil)
+    (nil))
+(insn 132 131 133 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:61 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 133 132 134 5 (set (reg/f:SI 125)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:62 90 {*movsi_internal}
+     (nil))
+(insn 134 133 135 5 (parallel [
+            (set (reg/f:SI 105 [ D.1639 ])
+                (plus:SI (reg/f:SI 125)
+                    (const_int 1048 [0x418])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:62 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 125)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1048 [0x418]))
+                (nil)))))
+(insn 135 134 136 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:62 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 136 135 137 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 1 [0x1])) interrupts.cpp:62 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 137 136 138 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 105 [ D.1639 ])) interrupts.cpp:62 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 105 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 138 137 139 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:62 659 {*call}
+     (nil)
+    (nil))
+(insn 139 138 140 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:62 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 140 139 141 5 (set (reg/f:SI 126)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:64 90 {*movsi_internal}
+     (nil))
+(insn 141 140 142 5 (parallel [
+            (set (reg/f:SI 106 [ D.1639 ])
+                (plus:SI (reg/f:SI 126)
+                    (const_int 1040 [0x410])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:64 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 126)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1040 [0x410]))
+                (nil)))))
+(insn 142 141 143 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:64 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 143 142 144 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 0 [0])) interrupts.cpp:64 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 144 143 145 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 106 [ D.1639 ])) interrupts.cpp:64 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 106 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 145 144 146 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:64 659 {*call}
+     (nil)
+    (nil))
+(insn 146 145 147 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:64 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 147 146 148 5 (set (reg/f:SI 127)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:65 90 {*movsi_internal}
+     (nil))
+(insn 148 147 149 5 (parallel [
+            (set (reg/f:SI 107 [ D.1639 ])
+                (plus:SI (reg/f:SI 127)
+                    (const_int 1048 [0x418])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:65 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 127)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1048 [0x418]))
+                (nil)))))
+(insn 149 148 150 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:65 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 150 149 151 5 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 0 [0])) interrupts.cpp:65 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 151 150 152 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 107 [ D.1639 ])) interrupts.cpp:65 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 107 [ D.1639 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 152 151 153 5 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:65 659 {*call}
+     (nil)
+    (nil))
+(insn 153 152 154 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:65 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 154 153 155 5 (set (reg:HI 108 [ D.1640 ])
+        (const_int 8 [0x8])) interrupts.cpp:69 92 {*movhi_internal}
+     (nil))
+(insn 155 154 156 5 (parallel [
+            (set (reg:HI 109 [ D.1640 ])
+                (ashift:HI (reg:HI 108 [ D.1640 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:69 515 {*ashlhi3_1}
+     (expr_list:REG_DEAD (reg:HI 108 [ D.1640 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 156 155 157 5 (parallel [
+            (set (reg:HI 110 [ D.1640 ])
+                (plus:HI (reg:HI 109 [ D.1640 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:69 220 {*addhi_1}
+     (expr_list:REG_DEAD (reg:HI 109 [ D.1640 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 157 156 158 5 (set (mem/j/c:HI (plus:SI (reg/f:SI 20 frame)
+                (const_int -10 [0xfffffffffffffff6])) [0 idt.size+0 S2 A16])
+        (reg:HI 110 [ D.1640 ])) interrupts.cpp:69 92 {*movhi_internal}
+     (expr_list:REG_DEAD (reg:HI 110 [ D.1640 ])
+        (nil)))
+(insn 158 157 159 5 (set (reg:SI 111 [ D.1643 ])
+        (symbol_ref:SI ("_ZN16InterruptManager24interruptDescriptorTableE") [flags 0x2]  <var_decl 0x7f920469ae10 interruptDescriptorTable>)) interrupts.cpp:70 90 {*movsi_internal}
+     (nil))
+(insn 159 158 160 5 (set (mem/j/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 idt.base+0 S4 A16])
+        (reg:SI 111 [ D.1643 ])) interrupts.cpp:70 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 111 [ D.1643 ])
+        (nil)))
+(insn 160 159 163 5 (parallel [
+            (asm_operands/v ("lidt %0") ("") 0 [
+                    (mem/c:BLK (plus:SI (reg/f:SI 20 frame)
+                            (const_int -10 [0xfffffffffffffff6])) [0 idt+0 S6 A16])
+                ]
+                 [
+                    (asm_input:BLK ("m") interrupts.cpp:71)
+                ]
+                 [] interrupts.cpp:71)
+            (clobber (reg:QI 18 fpsr))
+            (clobber (reg:QI 17 flags))
+        ]) interrupts.cpp:71 -1
+     (expr_list:REG_UNUSED (reg:QI 18 fpsr)
+        (expr_list:REG_UNUSED (reg:QI 17 flags)
+            (nil))))
+(insn 163 160 0 5 (const_int 0 [0]) interrupts.cpp:72 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function void InterruptManager::Activate() (_ZN16InterruptManager8ActivateEv, funcdef_no=18, decl_uid=1359, cgraph_uid=18, symbol_order=20)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 5 n_edges 5 count 5 (    1)
+Building IRA IR
+verify found no changes in insn with uid = 12.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r89: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r89,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a2 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a1(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a2(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+
+   Insn 21(l0): point = 0
+   Insn 18(l0): point = 2
+   Insn 17(l0): point = 4
+   Insn 16(l0): point = 6
+   Insn 13(l0): point = 9
+   Insn 12(l0): point = 11
+   Insn 11(l0): point = 13
+   Insn 10(l0): point = 15
+   Insn 9(l0): point = 17
+   Insn 7(l0): point = 20
+   Insn 6(l0): point = 22
+   Insn 5(l0): point = 24
+ a0(r89): [5..6]
+ a1(r88): [14..17]
+ a2(r87): [23..24]
+Compressing live ranges: from 27 to 6 - 22%
+Ranges after the compression:
+ a0(r89): [0..1]
+ a1(r88): [2..3]
+ a2(r87): [4..5]
+  regions=1, blocks=5, points=6
+    allocnos=3 (big 0), copies=0, conflicts=0, ranges=3
+Disposition:
+    2:r87  l0     0    1:r88  l0     0    0:r89  l0     0
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+void InterruptManager::Activate()
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 6[bp] 7[sp] 17[flags]
+;;  ref usage 	r0={2d} r1={2d} r2={2d} r6={1d,4u} r7={4d,10u} r8={1d} r9={1d} r10={1d} r11={1d} r12={1d} r13={1d} r14={1d} r15={1d} r16={1d,4u} r17={4d,1u} r18={1d} r19={1d} r20={1d,4u} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r32={1d} r33={1d} r34={1d} r35={1d} r36={1d} r37={1d} r38={1d} r39={1d} r40={1d} r41={1d} r42={1d} r43={1d} r44={1d} r45={1d} r46={1d} r47={1d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r87={1d,1u} r88={1d,1u} r89={1d,1u} 
+;;    total ref usage 116{90d,26u,0e} in 12{11 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 87
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1644 ])
+        (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])) interrupts.cpp:75 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:SI 87 [ D.1644 ])
+            (const_int 0 [0]))) interrupts.cpp:75 3 {*cmpsi_ccno_1}
+     (expr_list:REG_DEAD (reg/f:SI 87 [ D.1644 ])
+        (nil)))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) interrupts.cpp:75 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 14)
+;;  succ:       3 (FALLTHRU)
+;;              4
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 4, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 88
+(note 8 7 9 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 3 (set (reg/f:SI 88 [ D.1644 ])
+        (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])) interrupts.cpp:76 90 {*movsi_internal}
+     (nil))
+(insn 10 9 11 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:76 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 11 10 12 3 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 88 [ D.1644 ])) interrupts.cpp:76 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 88 [ D.1644 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 12 11 13 3 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager10DeactivateEv") [flags 0x3]  <function_decl 0x7f92046a7288 Deactivate>) [0 Deactivate S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:76 659 {*call}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 13 12 14 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:76 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+;;  succ:       4 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2
+;;              3 (FALLTHRU)
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 89
+(code_label 14 13 15 4 12 "" [1 uses])
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg/f:SI 89)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:77 90 {*movsi_internal}
+     (nil))
+(insn 17 16 18 4 (set (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])
+        (reg/f:SI 89)) interrupts.cpp:77 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 89)
+        (nil)))
+(insn 18 17 21 4 (asm_input/v ("sti") interrupts.cpp:78) interrupts.cpp:78 -1
+     (nil))
+(insn 21 18 0 4 (const_int 0 [0]) interrupts.cpp:79 684 {nop}
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function void InterruptManager::Deactivate() (_ZN16InterruptManager10DeactivateEv, funcdef_no=19, decl_uid=1361, cgraph_uid=19, symbol_order=21)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 6 n_edges 6 count 6 (    1)
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a0 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+
+   Insn 19(l0): point = 1
+   Insn 10(l0): point = 4
+   Insn 9(l0): point = 6
+   Insn 7(l0): point = 9
+   Insn 6(l0): point = 11
+   Insn 5(l0): point = 13
+ a0(r87): [12..13]
+Compressing live ranges: from 16 to 2 - 12%
+Ranges after the compression:
+ a0(r87): [0..1]
+  regions=1, blocks=6, points=2
+    allocnos=1 (big 0), copies=0, conflicts=0, ranges=1
+Disposition:
+    0:r87  l0     0
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+void InterruptManager::Deactivate()
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 6[bp] 17[flags]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r6={1d,5u} r7={1d,5u} r16={1d,5u} r17={1d,1u} r20={1d,5u} r87={1d,1u} 
+;;    total ref usage 31{9d,22u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 87
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 87 [ D.1645 ])
+        (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])) interrupts.cpp:83 90 {*movsi_internal}
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:SI 87 [ D.1645 ])
+            (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32]))) interrupts.cpp:83 7 {*cmpsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 87 [ D.1645 ])
+        (nil)))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:SI 18)
+            (pc))) interrupts.cpp:83 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 18)
+;;  succ:       3 (FALLTHRU)
+;;              5
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 5, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	
+(note 8 7 9 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 3 (set (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])
+        (const_int 0 [0])) interrupts.cpp:84 90 {*movsi_internal}
+     (nil))
+(insn 10 9 18 3 (asm_input/v ("cli") interrupts.cpp:85) interrupts.cpp:85 -1
+     (nil))
+;;  succ:       5 [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 5, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 4, flags: (NEW, RTL, MODIFIED)
+;;  pred:       2
+;;              3 [100.0%]  (FALLTHRU)
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	
+(code_label 18 10 17 5 15 "" [1 uses])
+(note 17 18 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 19 17 13 5 (const_int 0 [0]) interrupts.cpp:87 684 {nop}
+     (nil))
+;;  succ:       4 [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 5, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       5 [100.0%]  (FALLTHRU)
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	
+(code_label 13 19 14 4 13 "" [0 uses])
+(note 14 13 0 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function static uint32_t InterruptManager::handleInterrupt(uint8_t, uint32_t) (_ZN16InterruptManager15handleInterruptEhj, funcdef_no=20, decl_uid=1352, cgraph_uid=20, symbol_order=22)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 6 n_edges 6 count 6 (    1)
+Building IRA IR
+verify found no changes in insn with uid = 17.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r92: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a5 (r92,l0) best Q_REGS, allocno Q_REGS
+    r91: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a0 (r91,l0) best AREG, allocno GENERAL_REGS
+    r90: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a2 (r90,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r89: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a3 (r89,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a4 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a1 (r87,l0) best AREG, allocno GENERAL_REGS
+
+  a0(r91,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:4
+  a1(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a2(r90,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a3(r89,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a4(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a5(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+
+   Insn 32(l0): point = 0
+   Insn 31(l0): point = 2
+   Insn 27(l0): point = 4
+   Insn 24(l0): point = 7
+   Insn 34(l0): point = 10
+   Insn 19(l0): point = 12
+   Insn 18(l0): point = 14
+   Insn 17(l0): point = 16
+   Insn 16(l0): point = 18
+   Insn 15(l0): point = 20
+   Insn 14(l0): point = 22
+   Insn 13(l0): point = 24
+   Insn 12(l0): point = 26
+   Insn 11(l0): point = 28
+   Insn 9(l0): point = 31
+   Insn 8(l0): point = 33
+   Insn 7(l0): point = 35
+   Insn 3(l0): point = 37
+   Insn 2(l0): point = 39
+ a0(r91): [3..4]
+ a1(r87): [10..12] [5..7]
+ a2(r90): [19..26]
+ a3(r89): [21..28]
+ a4(r88): [34..35]
+ a5(r92): [38..39]
+Compressing live ranges: from 42 to 12 - 28%
+Ranges after the compression:
+ a0(r91): [0..1]
+ a1(r87): [2..5]
+ a2(r90): [6..7]
+ a3(r89): [6..7]
+ a4(r88): [8..9]
+ a5(r92): [10..11]
+  regions=1, blocks=6, points=12
+    allocnos=6 (big 0), copies=0, conflicts=0, ranges=6
+Disposition:
+    1:r87  l0     0    4:r88  l0     0    3:r89  l0     1    2:r90  l0     0
+    0:r91  l0     0    5:r92  l0     0
++++Costs: overall -2, reg -2, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+static uint32_t InterruptManager::handleInterrupt(uint8_t, uint32_t)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 0 [ax] 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 0[ax] 6[bp] 7[sp] 17[flags]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r6={1d,5u} r7={6d,13u} r8={1d} r9={1d} r10={1d} r11={1d} r12={1d} r13={1d} r14={1d} r15={1d} r16={1d,7u} r17={4d,1u} r18={1d} r19={1d} r20={1d,7u} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r32={1d} r33={1d} r34={1d} r35={1d} r36={1d} r37={1d} r38={1d} r39={1d} r40={1d} r41={1d} r42={1d} r43={1d} r44={1d} r45={1d} r46={1d} r47={1d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r87={2d,1u} r88={1d,1u} r89={1d,1u} r90={1d,1u} r91={1d,1u} r92={1d,1u} 
+;;    total ref usage 139{97d,42u,0e} in 19{18 regular + 1 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 88 92
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 92)
+        (mem/c:SI (reg/f:SI 16 argp) [0 interruptNumber+0 S4 A32])) interrupts.cpp:89 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 interruptNumber+0 S1 A32])
+        (subreg:QI (reg:SI 92) 0)) interrupts.cpp:89 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 92)
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:SI 88 [ D.1647 ])
+        (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])) interrupts.cpp:90 90 {*movsi_internal}
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:SI 88 [ D.1647 ])
+            (const_int 0 [0]))) interrupts.cpp:90 3 {*cmpsi_ccno_1}
+     (expr_list:REG_DEAD (reg/f:SI 88 [ D.1647 ])
+        (nil)))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) interrupts.cpp:90 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 22)
+;;  succ:       3 (FALLTHRU)
+;;              4
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 4, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 87 89 90
+(note 10 9 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 3 (set (reg:SI 89 [ D.1648 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -4 [0xfffffffffffffffc])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:91 138 {*zero_extendqisi2}
+     (nil))
+(insn 12 11 13 3 (set (reg/f:SI 90 [ D.1647 ])
+        (mem/f/c:SI (symbol_ref:SI ("_ZN16InterruptManager22ActiveInterruptManagerE") [flags 0x2]  <var_decl 0x7f920469ab40 ActiveInterruptManager>) [0 ActiveInterruptManager+0 S4 A32])) interrupts.cpp:91 90 {*movsi_internal}
+     (nil))
+(insn 13 12 14 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -4 [0xfffffffffffffffc])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:91 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 4 [0x4])
+            (nil))))
+(insn 14 13 15 3 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 esp+0 S4 A32])) interrupts.cpp:91 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 15 14 16 3 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 89 [ D.1648 ])) interrupts.cpp:91 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg:SI 89 [ D.1648 ])
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 16 15 17 3 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 90 [ D.1647 ])) interrupts.cpp:91 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 90 [ D.1647 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 17 16 18 3 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager17doHandleInterruptEhj") [flags 0x3]  <function_decl 0x7f92046a75e8 doHandleInterrupt>) [0 doHandleInterrupt S1 A8])
+            (const_int 16 [0x10]))) interrupts.cpp:91 668 {*call_value}
+     (nil)
+    (nil))
+(insn 18 17 19 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:91 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 19 18 34 3 (set (reg:SI 87 [ D.1646 ])
+        (reg:SI 0 ax)) interrupts.cpp:91 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 0 ax)
+        (nil)))
+(jump_insn 34 19 35 3 (set (pc)
+        (label_ref 25)) interrupts.cpp:91 654 {jump}
+     (nil)
+ -> 25)
+;;  succ:       5 [100.0%] 
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame] 87
+
+(barrier 35 34 22)
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 5, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 87
+(code_label 22 35 23 4 17 "" [1 uses])
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 4 (set (reg:SI 87 [ D.1646 ])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 esp+0 S4 A32])) interrupts.cpp:93 90 {*movsi_internal}
+     (nil))
+;;  succ:       5 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame] 87
+
+;; basic block 5, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 4, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       4 (FALLTHRU)
+;;              3 [100.0%] 
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame] 87
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame] 87
+;; lr  def 	 0 [ax] 91
+(code_label 25 24 26 5 18 "" [1 uses])
+(note 26 25 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 31 5 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 87 [ D.1646 ])) 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 87 [ D.1646 ])
+        (nil)))
+(insn 31 27 32 5 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) interrupts.cpp:94 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 91 [ <retval> ])
+        (nil)))
+(insn 32 31 0 5 (use (reg/i:SI 0 ax)) interrupts.cpp:94 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 0 [ax] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+
+;; Function uint32_t InterruptManager::doHandleInterrupt(uint8_t, uint32_t) (_ZN16InterruptManager17doHandleInterruptEhj, funcdef_no=21, decl_uid=1368, cgraph_uid=21, symbol_order=23)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue:n_basic_blocks 11 n_edges 15 count 11 (    1)
+Building IRA IR
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 59.
+verify found no changes in insn with uid = 74.
+verify found no changes in insn with uid = 84.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+    r123: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a3 (r123,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a5 (r122,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a9 (r121,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r120: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a12 (r120,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a16 (r119,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a19 (r118,l0) best Q_REGS, allocno Q_REGS
+    r117: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a20 (r117,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a21 (r116,l0) best AREG, allocno GENERAL_REGS
+    r115: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a24 (r115,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a28 (r114,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r112: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a31 (r112,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r111: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a33 (r111,l0) best Q_REGS, allocno Q_REGS
+    r110: preferred AREG, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a0 (r110,l0) best AREG, allocno GENERAL_REGS
+    r109: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a1 (r109,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r108: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a2 (r108,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r107: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a4 (r107,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r106: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a7 (r106,l0) best Q_REGS, allocno Q_REGS
+    r105: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a8 (r105,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r104: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a10 (r104,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r103: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a11 (r103,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r102: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a6 (r102,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r101: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a14 (r101,l0) best Q_REGS, allocno Q_REGS
+    r100: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a15 (r100,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r99: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a17 (r99,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r98: preferred Q_REGS, alternative GENERAL_REGS, allocno Q_REGS
+    a18 (r98,l0) best Q_REGS, allocno Q_REGS
+    r97: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a13 (r97,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r96: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a23 (r96,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r95: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a25 (r95,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r94: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a22 (r94,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r93: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a26 (r93,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r92: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a27 (r92,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r91: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a29 (r91,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r88: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a30 (r88,l0) best GENERAL_REGS, allocno GENERAL_REGS
+    r87: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    a32 (r87,l0) best GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r110,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:4
+  a1(r109,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a2(r108,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a3(r123,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a4(r107,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a5(r122,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a6(r102,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a7(r106,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:8
+  a8(r105,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a9(r121,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a10(r104,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:6
+  a11(r103,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a12(r120,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a13(r97,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a14(r101,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:8
+  a15(r100,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a16(r119,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a17(r99,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a18(r98,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:6
+  a19(r118,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:4 DIREG:4 AD_REGS:0 Q_REGS:0 NON_Q_REGS:4 GENERAL_REGS:4 MEM:7
+  a20(r117,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:7
+  a21(r116,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:5
+  a22(r94,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a23(r96,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a24(r115,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a25(r95,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a26(r93,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a27(r92,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a28(r114,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a29(r91,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a30(r88,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a31(r112,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a32(r87,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:0 DIREG:0 AD_REGS:0 Q_REGS:0 NON_Q_REGS:0 GENERAL_REGS:0 MEM:8
+  a33(r111,l0) costs: AREG:0 DREG:0 CREG:0 BREG:0 SIREG:2 DIREG:2 AD_REGS:0 Q_REGS:0 NON_Q_REGS:2 GENERAL_REGS:2 MEM:8
+
+   Insn 96(l0): point = 0
+   Insn 95(l0): point = 2
+   Insn 91(l0): point = 4
+   Insn 88(l0): point = 6
+   Insn 85(l0): point = 9
+   Insn 84(l0): point = 11
+   Insn 83(l0): point = 13
+   Insn 82(l0): point = 15
+   Insn 81(l0): point = 17
+   Insn 80(l0): point = 19
+   Insn 79(l0): point = 21
+   Insn 77(l0): point = 24
+   Insn 76(l0): point = 26
+   Insn 75(l0): point = 28
+   Insn 74(l0): point = 30
+   Insn 73(l0): point = 32
+   Insn 72(l0): point = 34
+   Insn 71(l0): point = 36
+   Insn 70(l0): point = 38
+   Insn 69(l0): point = 40
+   Insn 67(l0): point = 43
+   Insn 66(l0): point = 45
+   Insn 64(l0): point = 48
+   Insn 63(l0): point = 50
+   Insn 60(l0): point = 53
+   Insn 59(l0): point = 55
+   Insn 58(l0): point = 57
+   Insn 57(l0): point = 59
+   Insn 56(l0): point = 61
+   Insn 55(l0): point = 63
+   Insn 54(l0): point = 65
+   Insn 53(l0): point = 67
+   Insn 52(l0): point = 69
+   Insn 51(l0): point = 71
+   Insn 50(l0): point = 73
+   Insn 49(l0): point = 75
+   Insn 48(l0): point = 77
+   Insn 47(l0): point = 79
+   Insn 46(l0): point = 81
+   Insn 45(l0): point = 83
+   Insn 44(l0): point = 85
+   Insn 43(l0): point = 87
+   Insn 42(l0): point = 89
+   Insn 41(l0): point = 91
+   Insn 40(l0): point = 93
+   Insn 39(l0): point = 95
+   Insn 38(l0): point = 97
+   Insn 36(l0): point = 100
+   Insn 35(l0): point = 102
+   Insn 98(l0): point = 105
+   Insn 30(l0): point = 107
+   Insn 29(l0): point = 109
+   Insn 28(l0): point = 111
+   Insn 27(l0): point = 113
+   Insn 26(l0): point = 115
+   Insn 25(l0): point = 117
+   Insn 24(l0): point = 119
+   Insn 23(l0): point = 121
+   Insn 22(l0): point = 123
+   Insn 21(l0): point = 125
+   Insn 20(l0): point = 127
+   Insn 19(l0): point = 129
+   Insn 18(l0): point = 131
+   Insn 17(l0): point = 133
+   Insn 16(l0): point = 135
+   Insn 11(l0): point = 138
+   Insn 10(l0): point = 140
+   Insn 9(l0): point = 142
+   Insn 8(l0): point = 144
+   Insn 7(l0): point = 146
+   Insn 3(l0): point = 148
+   Insn 2(l0): point = 150
+ a0(r110): [3..4]
+ a1(r109): [5..6]
+ a2(r108): [14..19]
+ a3(r123): [20..21]
+ a4(r107): [33..38]
+ a5(r122): [39..40]
+ a6(r102): [62..73]
+ a7(r106): [62..63]
+ a8(r105): [64..65]
+ a9(r121): [66..67]
+ a10(r104): [66..69]
+ a11(r103): [70..71]
+ a12(r120): [74..75]
+ a13(r97): [78..91]
+ a14(r101): [78..79]
+ a15(r100): [80..81]
+ a16(r119): [82..83]
+ a17(r99): [82..85]
+ a18(r98): [86..87]
+ a19(r118): [88..89]
+ a20(r117): [92..93]
+ a21(r116): [108..109]
+ a22(r94): [114..127]
+ a23(r96): [116..121]
+ a24(r115): [122..123]
+ a25(r95): [122..125]
+ a26(r93): [128..129]
+ a27(r92): [130..131]
+ a28(r114): [132..133]
+ a29(r91): [132..135]
+ a30(r88): [141..142]
+ a31(r112): [143..144]
+ a32(r87): [143..146]
+ a33(r111): [149..150]
+Compressing live ranges: from 153 to 52 - 33%
+Ranges after the compression:
+ a0(r110): [0..1]
+ a1(r109): [2..3]
+ a2(r108): [4..5]
+ a3(r123): [6..7]
+ a4(r107): [8..9]
+ a5(r122): [10..11]
+ a6(r102): [12..19]
+ a7(r106): [12..13]
+ a8(r105): [14..15]
+ a9(r121): [16..17]
+ a10(r104): [16..17]
+ a11(r103): [18..19]
+ a12(r120): [20..21]
+ a13(r97): [22..31]
+ a14(r101): [22..23]
+ a15(r100): [24..25]
+ a16(r119): [26..27]
+ a17(r99): [26..27]
+ a18(r98): [28..29]
+ a19(r118): [30..31]
+ a20(r117): [32..33]
+ a21(r116): [34..35]
+ a22(r94): [36..39]
+ a23(r96): [36..37]
+ a24(r115): [38..39]
+ a25(r95): [38..39]
+ a26(r93): [40..41]
+ a27(r92): [42..43]
+ a28(r114): [44..45]
+ a29(r91): [44..45]
+ a30(r88): [46..47]
+ a31(r112): [48..49]
+ a32(r87): [48..49]
+ a33(r111): [50..51]
+  regions=1, blocks=11, points=52
+    allocnos=34 (big 0), copies=0, conflicts=0, ranges=34
+Disposition:
+   32:r87  l0     1   30:r88  l0     0   29:r91  l0     1   27:r92  l0     0
+   26:r93  l0     0   22:r94  l0     0   25:r95  l0     2   23:r96  l0     1
+   13:r97  l0     1   18:r98  l0     0   17:r99  l0     2   15:r100 l0     0
+   14:r101 l0     0    6:r102 l0     1   11:r103 l0     0   10:r104 l0     2
+    8:r105 l0     0    7:r106 l0     0    4:r107 l0     0    2:r108 l0     0
+    1:r109 l0     0    0:r110 l0     0   33:r111 l0     0   31:r112 l0     0
+   28:r114 l0     0   24:r115 l0     1   21:r116 l0     0   20:r117 l0     0
+   19:r118 l0     0   16:r119 l0     0   12:r120 l0     0    9:r121 l0     0
+    5:r122 l0     0    3:r123 l0     0
++++Costs: overall -2, reg -2, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+uint32_t InterruptManager::doHandleInterrupt(uint8_t, uint32_t)
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 []
+;;  hardware regs used 	 7 [sp] 16 [argp] 20 [frame]
+;;  regular block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;;  exit block uses 	 0 [ax] 6 [bp] 7 [sp] 20 [frame]
+;;  regs ever live 	 0[ax] 6[bp] 7[sp] 17[flags]
+;;  ref usage 	r0={6d,3u} r1={5d} r2={5d} r6={1d,10u} r7={16d,37u} r8={4d} r9={4d} r10={4d} r11={4d} r12={4d} r13={4d} r14={4d} r15={4d} r16={1d,18u,2e} r17={25d,5u} r18={4d} r19={4d} r20={1d,27u,5e} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r32={4d} r33={4d} r34={4d} r35={4d} r36={4d} r37={4d} r38={4d} r39={4d} r40={4d} r41={4d} r42={4d} r43={4d} r44={4d} r45={4d} r46={4d} r47={4d} r48={4d} r49={4d} r50={4d} r51={4d} r52={4d} r53={4d} r54={4d} r55={4d} r56={4d} r57={4d} r58={4d} r59={4d} r60={4d} r61={4d} r62={4d} r63={4d} r64={4d} r65={4d} r66={4d} r67={4d} r68={4d} r69={4d} r70={4d} r71={4d} r72={4d} r73={4d} r74={4d} r75={4d} r76={4d} r77={4d} r78={4d} r79={4d} r80={4d} r87={1d,1u} r88={1d,1u} r91={1d,1u} r92={1d,1u} r93={1d,1u} r94={1d,1u} r95={1d,1u} r96={1d,1u} r97={1d,1u} r98={1d,1u} r99={1d,1u,1e} r100={1d,1u} r101={1d,1u} r102={1d,1u} r103={1d,1u} r104={1d,1u,1e} r105={1d,1u} r106={1d,1u} r107={1d,1u} r108={1d,1u} r109={1d,1u} r110={1d,1u} r111={1d,1u} r112={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} 
+;;    total ref usage 517{374d,134u,9e} in 72{68 regular + 4 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 0, next block 3, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags] 87 88 111 112
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 111)
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 4 [0x4])) [0 interruptNumber+0 S4 A32])) interrupts.cpp:96 90 {*movsi_internal}
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+        (subreg:QI (reg:SI 111) 0)) interrupts.cpp:96 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:SI 111)
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.1649 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:98 138 {*zero_extendqisi2}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 112)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:98 90 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 88 [ D.1650 ])
+        (mem/f/j:SI (plus:SI (mult:SI (reg:SI 87 [ D.1649 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 112)) [0 this_7(D)->handlers S4 A32])) interrupts.cpp:98 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 112)
+        (expr_list:REG_DEAD (reg:SI 87 [ D.1649 ])
+            (nil))))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:SI 88 [ D.1650 ])
+            (const_int 0 [0]))) interrupts.cpp:98 3 {*cmpsi_ccno_1}
+     (expr_list:REG_DEAD (reg/f:SI 88 [ D.1650 ])
+        (nil)))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) interrupts.cpp:98 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 33)
+;;  succ:       3 (FALLTHRU)
+;;              4
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 3, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 2, next block 4, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2 (FALLTHRU)
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 91 92 93 94 95 96 114 115 116
+(note 12 11 16 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 16 12 17 3 (set (reg:SI 91 [ D.1649 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:99 138 {*zero_extendqisi2}
+     (nil))
+(insn 17 16 18 3 (set (reg/f:SI 114)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (nil))
+(insn 18 17 19 3 (set (reg/f:SI 92 [ D.1650 ])
+        (mem/f/j:SI (plus:SI (mult:SI (reg:SI 91 [ D.1649 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 114)) [0 this_7(D)->handlers S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 114)
+        (expr_list:REG_DEAD (reg:SI 91 [ D.1649 ])
+            (nil))))
+(insn 19 18 20 3 (set (reg/f:SI 93 [ D.1651 ])
+        (mem/f/j:SI (reg/f:SI 92 [ D.1650 ]) [0 _12->_vptr.InterruptHandler+0 S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 92 [ D.1650 ])
+        (nil)))
+(insn 20 19 21 3 (set (reg/f:SI 94 [ D.1652 ])
+        (mem/f:SI (reg/f:SI 93 [ D.1651 ]) [0 *_13+0 S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 93 [ D.1651 ])
+        (nil)))
+(insn 21 20 22 3 (set (reg:SI 95 [ D.1649 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:99 138 {*zero_extendqisi2}
+     (nil))
+(insn 22 21 23 3 (set (reg/f:SI 115)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (nil))
+(insn 23 22 24 3 (set (reg/f:SI 96 [ D.1650 ])
+        (mem/f/j:SI (plus:SI (mult:SI (reg:SI 95 [ D.1649 ])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 115)) [0 this_7(D)->handlers S4 A32])) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 95 [ D.1649 ])
+            (nil))))
+(insn 24 23 25 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:99 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 25 24 26 3 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 esp+0 S4 A32])) interrupts.cpp:99 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 26 25 27 3 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 96 [ D.1650 ])) interrupts.cpp:99 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 96 [ D.1650 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 27 26 28 3 (set (reg:SI 0 ax)
+        (call (mem:QI (reg/f:SI 94 [ D.1652 ]) [0 *OBJ_TYPE_REF(_14;(struct InterruptHandler)_10->0) S1 A8])
+            (const_int 16 [0x10]))) interrupts.cpp:99 668 {*call_value}
+     (expr_list:REG_DEAD (reg/f:SI 94 [ D.1652 ])
+        (nil))
+    (nil))
+(insn 28 27 29 3 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:99 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 29 28 30 3 (set (reg:SI 116)
+        (reg:SI 0 ax)) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 0 ax)
+        (nil)))
+(insn 30 29 98 3 (set (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 esp+0 S4 A32])
+        (reg:SI 116)) interrupts.cpp:99 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 116)
+        (nil)))
+(jump_insn 98 30 99 3 (set (pc)
+        (label_ref 61)) 654 {jump}
+     (nil)
+ -> 61)
+;;  succ:       6 [100.0%] 
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+(barrier 99 98 33)
+;; basic block 4, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 3, next block 5, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       2
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags]
+(code_label 33 99 34 4 20 "" [1 uses])
+(note 34 33 35 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+            (const_int 32 [0x20]))) interrupts.cpp:101 5 {*cmpqi_1}
+     (nil))
+(jump_insn 36 35 37 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) interrupts.cpp:101 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CCZ 17 flags)
+        (nil))
+ -> 61)
+;;  succ:       5 (FALLTHRU)
+;;              6
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 5, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 4, next block 6, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       4 (FALLTHRU)
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 97 98 99 100 101 102 103 104 105 106 117 118 119 120 121
+(note 37 36 38 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 5 (set (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0x7f920471c2d0 *.LC0>)) interrupts.cpp:102 90 {*movsi_internal}
+     (nil))
+(insn 39 38 40 5 (set (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 hex+0 S4 A32])
+        (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 0x7f920471c360 *.LC1>)) interrupts.cpp:103 90 {*movsi_internal}
+     (nil))
+(insn 40 39 41 5 (set (reg/f:SI 117)
+        (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])) interrupts.cpp:104 90 {*movsi_internal}
+     (nil))
+(insn 41 40 42 5 (parallel [
+            (set (reg/f:SI 97 [ D.1653 ])
+                (plus:SI (reg/f:SI 117)
+                    (const_int 22 [0x16])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:104 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 117)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                            (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])
+                    (const_int 22 [0x16]))
+                (nil)))))
+(insn 42 41 43 5 (set (reg:QI 118)
+        (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])) interrupts.cpp:104 93 {*movqi_internal}
+     (nil))
+(insn 43 42 44 5 (parallel [
+            (set (reg:QI 98 [ D.1654 ])
+                (lshiftrt:QI (reg:QI 118)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:104 552 {*lshrqi3_1}
+     (expr_list:REG_DEAD (reg:QI 118)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (lshiftrt:QI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                            (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+                    (const_int 4 [0x4]))
+                (nil)))))
+(insn 44 43 45 5 (set (reg:SI 99 [ D.1655 ])
+        (zero_extend:SI (reg:QI 98 [ D.1654 ]))) interrupts.cpp:104 138 {*zero_extendqisi2}
+     (expr_list:REG_DEAD (reg:QI 98 [ D.1654 ])
+        (nil)))
+(insn 45 44 46 5 (set (reg/f:SI 119)
+        (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 hex+0 S4 A32])) interrupts.cpp:104 90 {*movsi_internal}
+     (nil))
+(insn 46 45 47 5 (parallel [
+            (set (reg/f:SI 100 [ D.1653 ])
+                (plus:SI (reg:SI 99 [ D.1655 ])
+                    (reg/f:SI 119)))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:104 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 119)
+        (expr_list:REG_DEAD (reg:SI 99 [ D.1655 ])
+            (expr_list:REG_UNUSED (reg:CC 17 flags)
+                (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                                (const_int -8 [0xfffffffffffffff8])) [0 hex+0 S4 A32])
+                        (reg:SI 99 [ D.1655 ]))
+                    (nil))))))
+(insn 47 46 48 5 (set (reg:QI 101 [ D.1656 ])
+        (mem:QI (reg/f:SI 100 [ D.1653 ]) [0 *_25+0 S1 A8])) interrupts.cpp:104 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 100 [ D.1653 ])
+        (nil)))
+(insn 48 47 49 5 (set (mem:QI (reg/f:SI 97 [ D.1653 ]) [0 *_22+0 S1 A8])
+        (reg:QI 101 [ D.1656 ])) interrupts.cpp:104 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:QI 101 [ D.1656 ])
+        (expr_list:REG_DEAD (reg/f:SI 97 [ D.1653 ])
+            (nil))))
+(insn 49 48 50 5 (set (reg/f:SI 120)
+        (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])) interrupts.cpp:105 90 {*movsi_internal}
+     (nil))
+(insn 50 49 51 5 (parallel [
+            (set (reg/f:SI 102 [ D.1653 ])
+                (plus:SI (reg/f:SI 120)
+                    (const_int 23 [0x17])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:105 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 120)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                            (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])
+                    (const_int 23 [0x17]))
+                (nil)))))
+(insn 51 50 52 5 (set (reg:SI 103 [ D.1655 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32]))) interrupts.cpp:105 138 {*zero_extendqisi2}
+     (nil))
+(insn 52 51 53 5 (parallel [
+            (set (reg:SI 104 [ D.1655 ])
+                (and:SI (reg:SI 103 [ D.1655 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:105 381 {*andsi_1}
+     (expr_list:REG_DEAD (reg:SI 103 [ D.1655 ])
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (nil))))
+(insn 53 52 54 5 (set (reg/f:SI 121)
+        (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -8 [0xfffffffffffffff8])) [0 hex+0 S4 A32])) interrupts.cpp:105 90 {*movsi_internal}
+     (nil))
+(insn 54 53 55 5 (parallel [
+            (set (reg/f:SI 105 [ D.1653 ])
+                (plus:SI (reg:SI 104 [ D.1655 ])
+                    (reg/f:SI 121)))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:105 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 121)
+        (expr_list:REG_DEAD (reg:SI 104 [ D.1655 ])
+            (expr_list:REG_UNUSED (reg:CC 17 flags)
+                (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                                (const_int -8 [0xfffffffffffffff8])) [0 hex+0 S4 A32])
+                        (reg:SI 104 [ D.1655 ]))
+                    (nil))))))
+(insn 55 54 56 5 (set (reg:QI 106 [ D.1656 ])
+        (mem:QI (reg/f:SI 105 [ D.1653 ]) [0 *_31+0 S1 A8])) interrupts.cpp:105 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg/f:SI 105 [ D.1653 ])
+        (nil)))
+(insn 56 55 57 5 (set (mem:QI (reg/f:SI 102 [ D.1653 ]) [0 *_28+0 S1 A8])
+        (reg:QI 106 [ D.1656 ])) interrupts.cpp:105 93 {*movqi_internal}
+     (expr_list:REG_DEAD (reg:QI 106 [ D.1656 ])
+        (expr_list:REG_DEAD (reg/f:SI 102 [ D.1653 ])
+            (nil))))
+(insn 57 56 58 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:106 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+            (nil))))
+(insn 58 57 59 5 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (mem/f/c:SI (plus:SI (reg/f:SI 20 frame)
+                (const_int -4 [0xfffffffffffffffc])) [0 foo+0 S4 A32])) interrupts.cpp:106 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 59 58 60 5 (call (mem:QI (symbol_ref:SI ("_Z6printfPc") [flags 0x41]  <function_decl 0x7f92046a7a20 printf>) [0 printf S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:106 659 {*call}
+     (nil)
+    (nil))
+(insn 60 59 61 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:106 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+;;  succ:       6 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 6, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 5, next block 7, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       5 (FALLTHRU)
+;;              4
+;;              3 [100.0%] 
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags]
+(code_label 61 60 62 6 21 "" [2 uses])
+(note 62 61 63 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 6 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+            (const_int 31 [0x1f]))) interrupts.cpp:109 5 {*cmpqi_1}
+     (nil))
+(jump_insn 64 63 65 6 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) interrupts.cpp:109 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CC 17 flags)
+        (nil))
+ -> 86)
+;;  succ:       7 (FALLTHRU)
+;;              10
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 7, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 6, next block 8, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       6 (FALLTHRU)
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 17 [flags]
+(note 65 64 66 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 7 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+            (const_int 47 [0x2f]))) interrupts.cpp:109 5 {*cmpqi_1}
+     (nil))
+(jump_insn 67 66 68 7 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) interrupts.cpp:109 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CC 17 flags)
+        (nil))
+ -> 86)
+;;  succ:       8 (FALLTHRU)
+;;              10
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 8, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 7, next block 9, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       7 (FALLTHRU)
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 107 122
+(note 68 67 69 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 8 (set (reg/f:SI 122)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:111 90 {*movsi_internal}
+     (nil))
+(insn 70 69 71 8 (parallel [
+            (set (reg/f:SI 107 [ D.1657 ])
+                (plus:SI (reg/f:SI 122)
+                    (const_int 1024 [0x400])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:111 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 122)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1024 [0x400]))
+                (nil)))))
+(insn 71 70 72 8 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:111 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 72 71 73 8 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) interrupts.cpp:111 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 73 72 74 8 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 107 [ D.1657 ])) interrupts.cpp:111 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 107 [ D.1657 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 74 73 75 8 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:111 659 {*call}
+     (nil)
+    (nil))
+(insn 75 74 76 8 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:111 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+(insn 76 75 77 8 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:QI (plus:SI (reg/f:SI 20 frame)
+                    (const_int -20 [0xffffffffffffffec])) [0 interruptNumber+0 S1 A32])
+            (const_int 39 [0x27]))) interrupts.cpp:112 5 {*cmpqi_1}
+     (nil))
+(jump_insn 77 76 78 8 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) interrupts.cpp:112 612 {*jcc_1}
+     (expr_list:REG_DEAD (reg:CC 17 flags)
+        (nil))
+ -> 86)
+;;  succ:       9 (FALLTHRU)
+;;              10
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 9, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 8, next block 10, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       8 (FALLTHRU)
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 7 [sp] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 19 [fpcr] 21 [] 22 [] 23 [] 24 [] 25 [] 26 [] 27 [] 28 [] 29 [] 30 [] 31 [] 32 [] 33 [] 34 [] 35 [] 36 [] 37 [] 38 [] 39 [] 40 [] 41 [] 42 [] 43 [] 44 [] 45 [] 46 [] 47 [] 48 [] 49 [] 50 [] 51 [] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 76 [] 77 [] 78 [] 79 [] 80 [] 108 123
+(note 78 77 79 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 9 (set (reg/f:SI 123)
+        (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])) interrupts.cpp:114 90 {*movsi_internal}
+     (nil))
+(insn 80 79 81 9 (parallel [
+            (set (reg/f:SI 108 [ D.1657 ])
+                (plus:SI (reg/f:SI 123)
+                    (const_int 1032 [0x408])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:114 217 {*addsi_1}
+     (expr_list:REG_DEAD (reg/f:SI 123)
+        (expr_list:REG_UNUSED (reg:CC 17 flags)
+            (expr_list:REG_EQUAL (plus:SI (mem/f/c:SI (reg/f:SI 16 argp) [0 this+0 S4 A32])
+                    (const_int 1032 [0x408]))
+                (nil)))))
+(insn 81 80 82 9 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:114 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+            (nil))))
+(insn 82 81 83 9 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (const_int 32 [0x20])) interrupts.cpp:114 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 83 82 84 9 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg/f:SI 108 [ D.1657 ])) interrupts.cpp:114 66 {*pushsi2}
+     (expr_list:REG_DEAD (reg/f:SI 108 [ D.1657 ])
+        (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+            (nil))))
+(call_insn 84 83 85 9 (call (mem:QI (symbol_ref:SI ("_ZN12Port8BitSlow5WriteEh") [flags 0x41]  <function_decl 0x7f920468dbd0 Write>) [0 Write S1 A8])
+        (const_int 16 [0x10])) interrupts.cpp:114 659 {*call}
+     (nil)
+    (nil))
+(insn 85 84 86 9 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) interrupts.cpp:114 217 {*addsi_1}
+     (expr_list:REG_UNUSED (reg:CC 17 flags)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (nil))))
+;;  succ:       10 (FALLTHRU)
+;; lr  out 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+
+;; basic block 10, loop depth 0, count 0, freq 0, maybe hot
+;;  prev block 9, next block 1, flags: (NEW, REACHABLE, RTL, MODIFIED)
+;;  pred:       6
+;;              7
+;;              9 (FALLTHRU)
+;;              8
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u-1(6){ }u-1(7){ }u-1(16){ }u-1(20){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+;; lr  def 	 0 [ax] 109 110
+(code_label 86 85 87 10 22 "" [3 uses])
+(note 87 86 88 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 91 10 (set (reg:SI 109 [ D.1658 ])
+        (mem/c:SI (plus:SI (reg/f:SI 16 argp)
+                (const_int 8 [0x8])) [0 esp+0 S4 A32])) interrupts.cpp:119 90 {*movsi_internal}
+     (nil))
+(insn 91 88 95 10 (set (reg:SI 110 [ <retval> ])
+        (reg:SI 109 [ D.1658 ])) interrupts.cpp:119 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 109 [ D.1658 ])
+        (nil)))
+(insn 95 91 96 10 (set (reg/i:SI 0 ax)
+        (reg:SI 110 [ <retval> ])) interrupts.cpp:120 90 {*movsi_internal}
+     (expr_list:REG_DEAD (reg:SI 110 [ <retval> ])
+        (nil)))
+(insn 96 95 0 10 (use (reg/i:SI 0 ax)) interrupts.cpp:120 -1
+     (nil))
+;;  succ:       EXIT [100.0%]  (FALLTHRU)
+;; lr  out 	 0 [ax] 6 [bp] 7 [sp] 16 [argp] 20 [frame]
+

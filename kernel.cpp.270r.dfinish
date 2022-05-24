@@ -1,0 +1,270 @@
+
+;; Function void callConstructors() (callConstructors, funcdef_no=7, decl_uid=1422, cgraph_uid=7, symbol_order=7)
+
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 27 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 27 3 28 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A8])
+        (reg/f:SI 6 bp)) kernel.cpp:10 66 {*pushsi2}
+     (nil))
+(insn/f 28 27 29 2 (set (reg/f:SI 6 bp)
+        (reg/f:SI 7 sp)) kernel.cpp:10 90 {*movsi_internal}
+     (nil))
+(insn/f 29 28 30 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -24 [0xffffffffffffffe8])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) kernel.cpp:10 969 {pro_epilogue_adjust_stack_si_add}
+     (nil))
+(note 30 29 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 30 40 2 NOTE_INSN_FUNCTION_BEG)
+(note 40 2 5 2 0x7ffb654c8bb0 NOTE_INSN_BLOCK_BEG)
+(insn 5 40 14 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -12 [0xfffffffffffffff4])) [0 i+0 S4 A32])
+        (symbol_ref:SI ("start_ctors") [flags 0x40]  <var_decl 0x7ffb654fc120 start_ctors>)) kernel.cpp:11 90 {*movsi_internal}
+     (nil))
+(code_label 14 5 6 3 3 "" [1 uses])
+(note 6 14 7 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 7 6 8 3 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:SI (plus:SI (reg/f:SI 6 bp)
+                    (const_int -12 [0xfffffffffffffff4])) [0 i+0 S4 A32])
+            (symbol_ref:SI ("end_ctors") [flags 0x40]  <var_decl 0x7ffb654fc1b0 end_ctors>))) kernel.cpp:11 7 {*cmpsi_1}
+     (nil))
+(jump_insn 8 7 9 3 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:SI 24)
+            (pc))) kernel.cpp:11 612 {*jcc_1}
+     (nil)
+ -> 24)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg/f:SI 0 ax [88])
+        (mem/f/c:SI (plus:SI (reg/f:SI 6 bp)
+                (const_int -12 [0xfffffffffffffff4])) [0 i+0 S4 A32])) kernel.cpp:12 90 {*movsi_internal}
+     (nil))
+(insn 11 10 12 4 (set (reg/f:SI 0 ax [orig:87 D.1506 ] [87])
+        (mem/f:SI (reg/f:SI 0 ax [88]) [0 *i_1+0 S4 A32])) kernel.cpp:12 90 {*movsi_internal}
+     (nil))
+(call_insn 12 11 13 4 (call (mem:QI (reg/f:SI 0 ax [orig:87 D.1506 ] [87]) [0 *_5 S1 A8])
+        (const_int 0 [0])) kernel.cpp:12 659 {*call}
+     (nil)
+    (nil))
+(insn 13 12 21 4 (parallel [
+            (set (mem/f/c:SI (plus:SI (reg/f:SI 6 bp)
+                        (const_int -12 [0xfffffffffffffff4])) [0 i+0 S4 A32])
+                (plus:SI (mem/f/c:SI (plus:SI (reg/f:SI 6 bp)
+                            (const_int -12 [0xfffffffffffffff4])) [0 i+0 S4 A32])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:11 217 {*addsi_1}
+     (nil))
+(jump_insn 21 13 22 4 (set (pc)
+        (label_ref 14)) kernel.cpp:11 654 {jump}
+     (nil)
+ -> 14)
+(barrier 22 21 24)
+(code_label 24 22 23 5 4 "" [1 uses])
+(note 23 24 41 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 41 23 25 5 0x7ffb654c8bb0 NOTE_INSN_BLOCK_END)
+(insn 25 41 31 5 (const_int 0 [0]) kernel.cpp:13 684 {nop}
+     (nil))
+(note 31 25 32 5 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 32 31 33 5 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 6 bp)
+                    (const_int 4 [0x4])))
+            (set (reg/f:SI 6 bp)
+                (mem:SI (reg/f:SI 6 bp) [0  S4 A8]))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) kernel.cpp:13 693 {leave}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 6 bp)
+        (expr_list:REG_CFA_DEF_CFA (plus:SI (reg/f:SI 7 sp)
+                (const_int 4 [0x4]))
+            (nil))))
+(jump_insn 33 32 34 5 (simple_return) kernel.cpp:13 680 {simple_return_internal}
+     (nil)
+ -> simple_return)
+(barrier 34 33 26)
+(note 26 34 0 NOTE_INSN_DELETED)
+
+;; Function void kernelMain(const void*, uint32_t) (kernelMain, funcdef_no=8, decl_uid=1429, cgraph_uid=8, symbol_order=8)
+
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 48 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 48 3 49 2 (set (mem:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A8])
+        (reg/f:SI 6 bp)) kernel.cpp:16 66 {*pushsi2}
+     (nil))
+(insn/f 49 48 50 2 (set (reg/f:SI 6 bp)
+        (reg/f:SI 7 sp)) kernel.cpp:16 90 {*movsi_internal}
+     (nil))
+(insn/f 50 49 51 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -1128 [0xfffffffffffffb98])))
+            (clobber (reg:CC 17 flags))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) kernel.cpp:16 969 {pro_epilogue_adjust_stack_si_add}
+     (nil))
+(note 51 50 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 51 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:18 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 6 5 7 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0x7ffb654fcd80 *.LC0>)) kernel.cpp:18 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 7 6 8 2 (call (mem:QI (symbol_ref:SI ("_Z6printfPc") [flags 0x41]  <function_decl 0x7ffb654f4a20 printf>) [0 printf S1 A8])
+        (const_int 16 [0x10])) kernel.cpp:18 659 {*call}
+     (nil)
+    (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:18 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 9 8 42 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:19 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 42 9 11 2 (set (reg:SI 0 ax [87])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -40 [0xffffffffffffffd8]))) kernel.cpp:19 213 {*leasi}
+     (nil))
+(insn 11 42 12 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [87])) kernel.cpp:19 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:SI ("_ZN21GlobalDescriptorTableC1Ev") [flags 0x41]  <function_decl 0x7ffb654cf6c0 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) kernel.cpp:19 659 {*call}
+     (nil)
+    (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:19 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 14 13 43 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:20 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 43 14 16 2 (set (reg:SI 0 ax [88])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -40 [0xffffffffffffffd8]))) kernel.cpp:20 213 {*leasi}
+     (nil))
+(insn 16 43 44 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [88])) kernel.cpp:20 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 44 16 18 2 (set (reg:SI 0 ax [89])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -1096 [0xfffffffffffffbb8]))) kernel.cpp:20 213 {*leasi}
+     (nil))
+(insn 18 44 19 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [89])) kernel.cpp:20 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 19 18 20 2 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManagerC1EP21GlobalDescriptorTable") [flags 0x41]  <function_decl 0x7ffb654f46c0 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) kernel.cpp:20 659 {*call}
+     (nil)
+    (nil))
+(insn 20 19 21 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:20 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 21 20 45 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:22 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 45 21 23 2 (set (reg:SI 0 ax [90])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -1096 [0xfffffffffffffbb8]))) kernel.cpp:22 213 {*leasi}
+     (nil))
+(insn 23 45 46 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [90])) kernel.cpp:22 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 46 23 25 2 (set (reg:SI 0 ax [91])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -1124 [0xfffffffffffffb9c]))) kernel.cpp:22 213 {*leasi}
+     (nil))
+(insn 25 46 26 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [91])) kernel.cpp:22 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 26 25 27 2 (call (mem:QI (symbol_ref:SI ("_ZN14KeyboardDriverC1EP16InterruptManager") [flags 0x41]  <function_decl 0x7ffb654f4d80 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 16 [0x10])) kernel.cpp:22 659 {*call}
+     (nil)
+    (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:22 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 28 27 47 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int -12 [0xfffffffffffffff4])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:24 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 12 [0xc])
+        (nil)))
+(insn 47 28 30 2 (set (reg:SI 0 ax [92])
+        (plus:SI (reg/f:SI 6 bp)
+            (const_int -1096 [0xfffffffffffffbb8]))) kernel.cpp:24 213 {*leasi}
+     (nil))
+(insn 30 47 31 2 (set (mem/f:SI (pre_dec:SI (reg/f:SI 7 sp)) [0  S4 A32])
+        (reg:SI 0 ax [92])) kernel.cpp:24 66 {*pushsi2}
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(call_insn 31 30 32 2 (call (mem:QI (symbol_ref:SI ("_ZN16InterruptManager8ActivateEv") [flags 0x41]  <function_decl 0x7ffb654f41b0 Activate>) [0 Activate S1 A8])
+        (const_int 16 [0x10])) kernel.cpp:24 659 {*call}
+     (nil)
+    (nil))
+(insn 32 31 34 2 (parallel [
+            (set (reg/f:SI 7 sp)
+                (plus:SI (reg/f:SI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) kernel.cpp:24 217 {*addsi_1}
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(code_label 34 32 33 3 6 "" [1 uses])
+(note 33 34 39 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 39 33 40 3 (set (pc)
+        (label_ref 34)) kernel.cpp:26 654 {jump}
+     (nil)
+ -> 34)
+(barrier 40 39 41)
+(note 41 40 0 NOTE_INSN_DELETED)
